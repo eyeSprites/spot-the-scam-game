@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spot the Scam! - Cybersecurity Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Start Screen -->
+        <div id="startScreen" class="screen active">
+            <h1>🎮 Spot the Scam!</h1>
+            <p>Read each message carefully and tap on sentences that look suspicious or scammy.</p>
+            <button id="startBtn" class="btn-primary">Start Game</button>
+        </div>
+
+        <!-- Game Screen -->
+        <div id="gameScreen" class="screen">
+            <div class="header">
+                <div class="progress">Message <span id="currentMessage">1</span> of 5</div>
+                <div class="score">
+                    <span class="correct">✅ <span id="correctCount">0</span></span>
+                    <span class="incorrect">❌ <span id="incorrectCount">0</span></span>
+                </div>
+            </div>
+
+            <div class="message-container">
+                <div id="messageContent"></div>
+            </div>
+
+            <button id="nextBtn" class="btn-primary hidden">Next Message</button>
+        </div>
+
+        <!-- End Screen -->
+        <div id="endScreen" class="screen">
+            <h1>🎉 Game Complete!</h1>
+            <div class="final-score">
+                <p>You identified <span id="finalCorrect">0</span> out of <span id="totalScam">0</span> scam sentences correctly!</p>
+                <p class="accuracy">Accuracy: <span id="accuracy">0</span>%</p>
+            </div>
+            <button id="restartBtn" class="btn-primary">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
