@@ -2,7 +2,7 @@
 const messages = [
     {
         sender: "USPS",
-        number: "+1 (855) 474-2691",
+        number: "+44 7911 123456",
         time: "Tuesday 1:01 PM",
         text: "U.S. Post: You have a USPS parcel being cleared, due to the detection of an invalid zip code address, the parcel can not be cleared, the parcel is temporarily detained, please confirm the zip code address information in the link within 24 hours. https://usps.com-bcamkozq.vip/i (Please reply with a Y, then exit the text message and open it again to activate the link, or copy the link into your Safari browser and open it) Have a great day from the USPS team!",
         scamIndices: [1, 2, 3, 4, 5]
@@ -16,7 +16,7 @@ const messages = [
     },
     {
         sender: "FedEx Delivery",
-        number: "+1 (844) 728-1147",
+        number: "+91 98765 43210",
         time: "Monday 9:22 AM",
         text: "FedEx Alert: Your package delivery has been suspended. We attempted delivery twice but access to your building was restricted. To reschedule delivery immediately, you must pay a $3.99 redelivery fee within 48 hours or your package will be returned to sender. Click here to pay now: fedex-delivery-portal.net/pay The system doesn't accept our normal payment methods due to security upgrades, so we can only process through this secure link. Tracking: FX8847291US",
         scamIndices: [1, 2, 3, 4]
@@ -30,7 +30,7 @@ const messages = [
     },
     {
         sender: "IRS Tax Services",
-        number: "+1 (866) 441-2155",
+        number: "+234 802 555 0199",
         time: "Friday 8:15 AM",
         text: "FINAL NOTICE: IRS records show you owe $4,287 in back taxes for 2023. You must call our Priority Resolution Department within 24 hours or a federal warrant will be issued for your arrest. Call 1-866-441-2155 immediately. We can only accept payment via Apple/Google gift cards due to IRS system maintenance. Our regular payment portal is temporarily offline. Do not ignore this urgent matter. Case #IRS-2024-8847",
         scamIndices: [0, 1, 2, 3, 4]
@@ -44,14 +44,14 @@ const messages = [
     },
     {
         sender: "Unknown",
-        number: "+1 (844) 555-0147",
+        number: "+63 917 555 0147",
         time: "Sunday 6:47 PM",
         text: "Mom, it's me! My phone broke and I'm using a friend's number. I'm in serious trouble - I got arrested for DUI and I'm at the police station. I need $2,500 for bail RIGHT NOW or I'll be stuck here all weekend! Please don't tell Dad, I'm so embarrassed. The bail bondsman only accepts Zelle or Venmo because their credit card system is down. Can you send it to this Venmo: @BailBonds_247? I only have one phone call and my battery is dying. PLEASE HURRY! I love you mom ❤️",
         scamIndices: [0, 2, 3, 4, 5, 6, 7]
     },
     {
         sender: "Toll Services FL",
-        number: "+1 (855) 865-5465",
+        number: "+86 138 0000 5465",
         time: "Monday 10:12 AM",
         text: "Florida Turnpike E-PASS: You have an unpaid toll of $6.50 from Nov 3rd. Your vehicle (plate ending 4J7B) was captured by toll cameras. Pay within 5 days to avoid a $25 late fee. Visit pay-florida-tolls.com/invoice Due to high traffic, our phone lines are down so you must pay online only. Enter plate number and credit card to settle. Invoice #FTP-8847291",
         scamIndices: [2, 3, 4]
@@ -65,7 +65,7 @@ const messages = [
     },
     {
         sender: "PayPal Security",
-        number: "+1 (888) 221-1161",
+        number: "+52 55 5555 1161",
         time: "Wednesday 4:55 PM",
         text: "URGENT PayPal Alert: Someone tried to send $847 from your account to an unknown recipient in Vietnam. We blocked this transaction but your account is now limited. You must verify your identity within 12 hours or your account will be permanently suspended and funds frozen. Click here immediately: paypal-secure-verify.com/account Our verification center is temporarily closed for maintenance so you MUST use this link. Enter your email, password, and last 4 of SSN. Case #PP-8847-VN",
         scamIndices: [0, 1, 2, 3, 4]
@@ -79,7 +79,7 @@ const messages = [
     },
     {
         sender: "Social Security",
-        number: "+1 (866) 593-0229",
+        number: "+60 12 345 0229",
         time: "Friday 9:41 AM",
         text: "SSA SUSPENSION ALERT: Your Social Security Number has been suspended due to suspicious activity linked to fraud in Texas. Your SSN was used to open 3 bank accounts. You must call 1-866-593-0229 IMMEDIATELY to speak with an investigator or a warrant will be issued for your arrest within 24 hours. We cannot email or mail you because this is time-sensitive. Our office can only handle this matter by phone due to federal privacy laws. Press 1 now. Case #SSA-FR-8847",
         scamIndices: [0, 1, 2, 3, 4, 5]
@@ -93,7 +93,7 @@ const messages = [
     },
     {
         sender: "Package Delivery",
-        number: "+1 (844) 474-8477",
+        number: "+7 495 555 8477",
         time: "Sunday 3:08 PM",
         text: "Your package from China is held at customs. Import tax of $8.75 must be paid within 72 hours or package returns to sender. Pay immediately at customs-clearance-usa.net/pay Our customs office is closed weekends so online payment is your only option right now. Package contains: Electronics. Tracking: CN8847291US. This is your final notice before automatic return!",
         scamIndices: [1, 2, 3, 4]
@@ -114,7 +114,7 @@ const messages = [
     },
     {
         sender: "Unknown Sender",
-        number: "+1 (844) 555-0192",
+        number: "+92 300 5550192",
         time: "Wednesday 11:04 AM",
         text: "Hey Dad! Car emergency! My car broke down on I-95 near exit 47. Tow truck guy is here (Mike's Towing) but he only takes Cash App or Venmo - his card reader isn't working. Need $180 ASAP for the tow or he'll leave me here! Can you send to @Towtruck_Mike right now? My phone is at 8% battery so I might not respond. I'll pay you back tonight I promise! This is so stressful 😰",
         scamIndices: [0, 2, 3, 4, 5]
@@ -128,7 +128,7 @@ const messages = [
     },
     {
         sender: "Walmart Rewards",
-        number: "+1 (844) 925-6278",
+        number: "+880 1711 555278",
         time: "Friday 4:41 PM",
         text: "🎉 WINNER ALERT! You've been selected for a $500 Walmart gift card! To claim your prize, verify your identity at walmart-rewards-claim.net within 48 hours. Complete a 2-min survey about your shopping habits. This is time-sensitive - prizes expire fast! Our call center is overwhelmed with winners right now so please use the website only. Don't miss out! Winner Code: WM-2024-8847 ✨",
         scamIndices: [0, 1, 2, 3, 4]
@@ -149,9 +149,10 @@ let incorrectCount = 0;
 let strikes = 0;
 let clickedSentences = new Set();
 let totalSentences = 0;
+let totalScamSentences = 0;
 let selectedMessages = [];
 const MAX_STRIKES = 3;
-const MESSAGES_PER_GAME = 5;
+const MESSAGES_PER_GAME = 3;
 
 // Shuffle array helper function
 function shuffleArray(array) {
@@ -195,9 +196,15 @@ function startGame() {
     correctCount = 0;
     incorrectCount = 0;
     strikes = 0;
+    totalScamSentences = 0;
     
-    // Select 5 random messages from the pool
+    // Select 3 random messages from the pool
     selectedMessages = shuffleArray(messages).slice(0, MESSAGES_PER_GAME);
+    
+    // Calculate total scam sentences across all 3 messages
+    selectedMessages.forEach(msg => {
+        totalScamSentences += msg.scamIndices.length;
+    });
     
     updateScore();
     loadMessage();
@@ -322,7 +329,7 @@ function handleSentenceClick(index, scamIndices) {
 }
 
 function updateScore() {
-    correctCountSpan.textContent = correctCount;
+    correctCountSpan.textContent = `${correctCount}/${totalScamSentences}`;
     strikeCountSpan.textContent = strikes;
 }
 

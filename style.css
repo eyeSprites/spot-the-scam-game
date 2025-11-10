@@ -128,7 +128,7 @@ body {
 }
 
 .contact-name {
-    font-size: 14px;
+    font-size: 16px;
     color: #fff;
     font-weight: 600;
     margin-bottom: 2px;
@@ -144,7 +144,7 @@ body {
 }
 
 .contact-number {
-    font-size: 12px;
+    font-size: 14px;
     color: #8e8e93;
     cursor: pointer;
     display: inline-block;
@@ -167,7 +167,7 @@ body {
 }
 
 .progress {
-    font-size: 0.9em;
+    font-size: 1em;
     color: #8e8e93;
     font-weight: 500;
 }
@@ -175,7 +175,7 @@ body {
 .score {
     display: flex;
     gap: 12px;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 .strikes {
@@ -207,7 +207,7 @@ body {
 }
 
 .message-time {
-    font-size: 11px;
+    font-size: 13px;
     color: #8e8e93;
     text-align: center;
     margin-bottom: 10px;
@@ -215,7 +215,7 @@ body {
 
 #messageContent {
     line-height: 1.5;
-    font-size: 15px;
+    font-size: 17px;
     color: #fff;
 }
 
