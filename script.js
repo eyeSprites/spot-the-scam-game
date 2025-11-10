@@ -1,131 +1,143 @@
-// Game Data - SUPER HARD realistic messages (20 total)
+// Game Data - Realistic text message scams with urgency, requests, and excuses
 const messages = [
     {
-        text: "TOLL ALERT: You have an outstanding toll of $4.75 from your recent trip on the Florida Turnpike. Your vehicle was captured by our toll cameras on October 28th. To avoid additional late fees of $25, please pay immediately at pay-fl-toll.com. Enter your license plate number and credit card to settle this balance.",
-        scamIndices: [2, 3]
+        sender: "USPS",
+        number: "+1 (855) 474-2691",
+        time: "Tuesday 1:01 PM",
+        text: "U.S. Post: You have a USPS parcel being cleared, due to the detection of an invalid zip code address, the parcel can not be cleared, the parcel is temporarily detained, please confirm the zip code address information in the link within 24 hours. https://usps.com-bcamkozq.vip/i (Please reply with a Y, then exit the text message and open it again to activate the link, or copy the link into your Safari browser and open it) Have a great day from the USPS team!",
+        scamIndices: [1, 2, 3, 4, 5]
     },
     {
-        text: "FINAL NOTICE: The IRS has been trying to reach you regarding unpaid taxes. This is your last warning before legal action is taken. You owe $3,847 in back taxes. Call our department immediately at 1-866-555-0178 to arrange payment and avoid arrest. Time is running out!",
-        scamIndices: [0, 1, 3, 4]
-    },
-    {
-        text: "Hi Sarah, I hope this email finds you well. I wanted to follow up on our meeting last week about the Johnson account. Can you send over the quarterly report by Friday? Also, I'll be out of office next Monday and Tuesday for the conference in Austin. Let me know if you need anything before then. Best regards, Mike",
+        sender: "Mom",
+        number: "(555) 123-4567",
+        time: "Wednesday 3:45 PM",
+        text: "Hi honey! Just wanted to let you know that Dad and I will be visiting next weekend. We're planning to arrive Saturday morning around 10 AM. Do you need us to bring anything? Also, we made dinner reservations at that Italian place you love for Saturday night at 7 PM. Let me know if that works for you. Love you!",
         scamIndices: []
     },
     {
-        text: "FedEx Delivery Exception: Your package has arrived at our customs facility but cannot be released until you pay an import tariff fee of $12.50. This international shipment requires immediate payment to avoid return to sender. Click here to pay the customs fee: fedex-customs-payment.net. Your tracking number is included in this message.",
-        scamIndices: [1, 2]
+        sender: "FedEx Delivery",
+        number: "+1 (844) 728-1147",
+        time: "Monday 9:22 AM",
+        text: "FedEx Alert: Your package delivery has been suspended. We attempted delivery twice but access to your building was restricted. To reschedule delivery immediately, you must pay a $3.99 redelivery fee within 48 hours or your package will be returned to sender. Click here to pay now: fedex-delivery-portal.net/pay The system doesn't accept our normal payment methods due to security upgrades, so we can only process through this secure link. Tracking: FX8847291US",
+        scamIndices: [1, 2, 3, 4]
     },
     {
-        text: "Congratulations! You've won a $500 Walmart gift card in our monthly customer appreciation drawing! To claim your prize, verify your identity by completing a short survey at walmart-winners.org. You must claim within 48 hours or the prize will go to an alternate winner. Don't miss out on this exclusive reward!",
-        scamIndices: [0, 1, 3]
-    },
-    {
-        text: "Your dentist appointment is scheduled for Thursday, March 15th at 2:30 PM with Dr. Anderson. Please arrive 10 minutes early to complete any necessary paperwork. If you need to reschedule, call our office at (555) 123-4567. We look forward to seeing you!",
+        sender: "Bank of America",
+        number: "+1 (800) 432-1000",
+        time: "Thursday 11:07 AM",
+        text: "Bank of America Security Alert: A charge of $1,247.89 at Best Buy in Miami, FL was flagged by our fraud detection system. If you did not make this purchase, please call the number on the back of your card immediately at 1-800-432-1000 or log into the BofA mobile app to dispute the transaction. Your card has been temporarily locked for your protection. Reference #: BOA-FR-8847.",
         scamIndices: []
     },
     {
-        text: "PayPal Security Alert: We've detected unusual activity on your account from an unrecognized device in Vietnam. Someone tried to send $847 to an unknown recipient. If this wasn't you, verify your account now at paypal-secure-login.com to prevent unauthorized transactions. Your account has been temporarily limited for your protection.",
-        scamIndices: [2, 3]
+        sender: "IRS Tax Services",
+        number: "+1 (866) 441-2155",
+        time: "Friday 8:15 AM",
+        text: "FINAL NOTICE: IRS records show you owe $4,287 in back taxes for 2023. You must call our Priority Resolution Department within 24 hours or a federal warrant will be issued for your arrest. Call 1-866-441-2155 immediately. We can only accept payment via Apple/Google gift cards due to IRS system maintenance. Our regular payment portal is temporarily offline. Do not ignore this urgent matter. Case #IRS-2024-8847",
+        scamIndices: [0, 1, 2, 3, 4]
     },
     {
-        text: "Your Amazon order #2847-9182 has been confirmed and will arrive between 2-5 business days. You can track your shipment by logging into your account on our website. If you have any questions, please contact our customer service team during business hours Monday through Friday, 9 AM to 6 PM EST.",
+        sender: "Amazon",
+        number: "+1 (888) 280-4331",
+        time: "Saturday 2:33 PM",
+        text: "Your Amazon order #284-7192847-9182473 has shipped! Wireless Bluetooth Headphones - Sony WH-1000XM5 will arrive Nov 13-15. Track your package in the Amazon app or at amazon.com/orders. If you have questions, visit our Help Center or call 1-888-280-4331. Thank you for shopping with Amazon!",
         scamIndices: []
     },
     {
-        text: "USPS: Your package is waiting at our distribution center. We attempted delivery but no one was home. Pay the redelivery fee of $2.99 to schedule a new delivery time: usps-redelivery.com. Use confirmation code #TR8492. This fee must be paid within 72 hours or your package will be returned.",
-        scamIndices: [2, 4]
+        sender: "Unknown",
+        number: "+1 (844) 555-0147",
+        time: "Sunday 6:47 PM",
+        text: "Mom, it's me! My phone broke and I'm using a friend's number. I'm in serious trouble - I got arrested for DUI and I'm at the police station. I need $2,500 for bail RIGHT NOW or I'll be stuck here all weekend! Please don't tell Dad, I'm so embarrassed. The bail bondsman only accepts Zelle or Venmo because their credit card system is down. Can you send it to this Venmo: @BailBonds_247? I only have one phone call and my battery is dying. PLEASE HURRY! I love you mom ❤️",
+        scamIndices: [0, 2, 3, 4, 5, 6, 7]
     },
     {
-        text: "Your subscription to Microsoft 365 will expire in 7 days. To continue using Word, Excel, and PowerPoint, renew your subscription through your Microsoft account. You can manage your subscription settings anytime by visiting account.microsoft.com. No action is needed if you have automatic renewal enabled.",
+        sender: "Toll Services FL",
+        number: "+1 (855) 865-5465",
+        time: "Monday 10:12 AM",
+        text: "Florida Turnpike E-PASS: You have an unpaid toll of $6.50 from Nov 3rd. Your vehicle (plate ending 4J7B) was captured by toll cameras. Pay within 5 days to avoid a $25 late fee. Visit pay-florida-tolls.com/invoice Due to high traffic, our phone lines are down so you must pay online only. Enter plate number and credit card to settle. Invoice #FTP-8847291",
+        scamIndices: [2, 3, 4]
+    },
+    {
+        sender: "Netflix",
+        number: "+1 (844) 505-2993",
+        time: "Tuesday 7:23 PM",
+        text: "Your Netflix subscription payment of $15.49 has been successfully processed. Your account is active and you can continue enjoying unlimited streaming. If you notice any unauthorized activity, please visit netflix.com/account or call us at 1-844-505-2993. Thanks for being a member!",
         scamIndices: []
     },
     {
-        text: "Social Security Administration Notice: Your social security number has been suspended due to suspicious activity linked to fraud in Texas. Call our fraud department immediately at 1-888-555-0199 to reactivate your number. Failure to call will result in arrest and frozen bank accounts. This is urgent!",
-        scamIndices: [0, 1, 2, 3]
+        sender: "PayPal Security",
+        number: "+1 (888) 221-1161",
+        time: "Wednesday 4:55 PM",
+        text: "URGENT PayPal Alert: Someone tried to send $847 from your account to an unknown recipient in Vietnam. We blocked this transaction but your account is now limited. You must verify your identity within 12 hours or your account will be permanently suspended and funds frozen. Click here immediately: paypal-secure-verify.com/account Our verification center is temporarily closed for maintenance so you MUST use this link. Enter your email, password, and last 4 of SSN. Case #PP-8847-VN",
+        scamIndices: [0, 1, 2, 3, 4]
     },
     {
-        text: "Hey! I saw you on LinkedIn and wanted to reach out about a job opportunity at our company. We're looking for someone with your background in marketing. Would you be interested in a quick 15-minute call to discuss? Let me know your availability this week. Thanks!",
+        sender: "Apple",
+        number: "+1 (800) 692-7753",
+        time: "Thursday 11:28 AM",
+        text: "Apple ID Security: Your Apple ID was used to sign in to iCloud on a Windows PC in Moscow, Russia on Nov 10 at 3:42 AM EST. If this was not you, please change your password immediately at appleid.apple.com and enable two-factor authentication. For help, contact Apple Support at 1-800-692-7753 or visit support.apple.com/apple-id.",
         scamIndices: []
     },
     {
-        text: "Bank of America Fraud Alert: We blocked a suspicious charge of $2,450 at an electronics store in California. If this purchase was not authorized by you, please call the number on the back of your debit card immediately or use our mobile app to report the fraud. We're here to protect you 24/7.",
+        sender: "Social Security",
+        number: "+1 (866) 593-0229",
+        time: "Friday 9:41 AM",
+        text: "SSA SUSPENSION ALERT: Your Social Security Number has been suspended due to suspicious activity linked to fraud in Texas. Your SSN was used to open 3 bank accounts. You must call 1-866-593-0229 IMMEDIATELY to speak with an investigator or a warrant will be issued for your arrest within 24 hours. We cannot email or mail you because this is time-sensitive. Our office can only handle this matter by phone due to federal privacy laws. Press 1 now. Case #SSA-FR-8847",
+        scamIndices: [0, 1, 2, 3, 4, 5]
+    },
+    {
+        sender: "Wells Fargo",
+        number: "+1 (800) 869-3557",
+        time: "Saturday 1:15 PM",
+        text: "Wells Fargo Fraud Alert: We declined a $897.50 charge at Target in Phoenix, AZ on your debit card ending in 4721. If you didn't make this purchase, no action needed - we've blocked the transaction. To unblock your card or report other issues, call 1-800-869-3557 or use the Wells Fargo app. Your account is secure.",
         scamIndices: []
     },
     {
-        text: "Your car's extended warranty is about to expire! This is your final courtesy call to renew your vehicle protection plan. Press 1 to speak with a warranty specialist about your 2019 Honda Accord. If you don't renew now, you'll have to pay thousands out of pocket for repairs. Don't wait!",
-        scamIndices: [0, 1, 4]
+        sender: "Package Delivery",
+        number: "+1 (844) 474-8477",
+        time: "Sunday 3:08 PM",
+        text: "Your package from China is held at customs. Import tax of $8.75 must be paid within 72 hours or package returns to sender. Pay immediately at customs-clearance-usa.net/pay Our customs office is closed weekends so online payment is your only option right now. Package contains: Electronics. Tracking: CN8847291US. This is your final notice before automatic return!",
+        scamIndices: [1, 2, 3, 4]
     },
     {
-        text: "Venmo Payment Request: Your friend Jessica Martinez sent you a payment request for $45.00 with the note 'dinner last night'. Open the Venmo app to pay or decline this request. You can also view this request by logging into venmo.com.",
+        sender: "Amazon Support",
+        number: "+1 (888) 280-4331",
+        time: "Monday 8:52 AM",
+        text: "Hello! This is Raj from Amazon Customer Service. I'm following up on your recent inquiry about order #284-7192847. As discussed, we've issued a full refund of $89.99 to your original payment method. The refund should appear in 3-5 business days. Is there anything else I can help you with today? You can reach us anytime at 1-888-280-4331 or through the Amazon app. Have a great day!",
         scamIndices: []
     },
     {
-        text: "Apple Store Receipt: You've been charged $899.99 for a new iPhone 15 Pro Max. If you did not make this purchase, cancel the order immediately by clicking here: apple-store-cancel.net. This charge will appear on your credit card within 24-48 hours. Act fast to prevent this transaction!",
-        scamIndices: [1, 2, 4]
-    },
-    {
-        text: "Hi Mom! My phone broke and I'm texting from a friend's number. I need to pay for the repair today but my bank app isn't working. Can you Venmo me $300? I'll pay you back as soon as I get home. This is my friend's number: (555) 987-6543. Love you!",
-        scamIndices: [2, 3]
-    },
-    {
-        text: "Your credit score has dropped 50 points! See what's hurting your credit and get your free credit report at freecreditscore-now.com. Enter your social security number and banking information to access your full report instantly. This service is 100% free for a limited time only!",
-        scamIndices: [0, 1, 2, 3]
-    },
-    {
-        text: "Meeting Reminder: Our team standup is at 10 AM tomorrow in Conference Room B. Please bring updates on your current projects. We'll also be discussing the Q4 budget allocation. Coffee and bagels will be provided. See you there!",
+        sender: "Venmo",
+        number: "+1 (855) 812-4430",
+        time: "Tuesday 5:37 PM",
+        text: "Venmo Payment Request: @SarahJ_Mom sent you a payment request for $25.00 with note: \"Pizza from last night 🍕\" You can pay or decline in the Venmo app. If you have questions about this request, contact the sender directly. Need help? Visit help.venmo.com or call 1-855-812-4430.",
         scamIndices: []
     },
     {
-        text: "Netflix account on hold: Your last payment was declined. Update your payment method within 24 hours to avoid account suspension. Click here to update billing: netflix-billing-update.com. You won't be able to watch anything until this is resolved. We value you as a member!",
-        scamIndices: [0, 1, 2]
+        sender: "Unknown Sender",
+        number: "+1 (844) 555-0192",
+        time: "Wednesday 11:04 AM",
+        text: "Hey Dad! Car emergency! My car broke down on I-95 near exit 47. Tow truck guy is here (Mike's Towing) but he only takes Cash App or Venmo - his card reader isn't working. Need $180 ASAP for the tow or he'll leave me here! Can you send to @Towtruck_Mike right now? My phone is at 8% battery so I might not respond. I'll pay you back tonight I promise! This is so stressful 😰",
+        scamIndices: [0, 2, 3, 4, 5]
     },
     {
-        text: "Congratulations on your application! We're excited to offer you a position as Remote Customer Service Representative at Amazon. This is a work-from-home opportunity earning $45/hour. To complete your onboarding, purchase your home office equipment package for $299 at amazon-careers-shop.com. You'll be reimbursed on your first paycheck. Start date is next Monday!",
-        scamIndices: [2, 3]
-    },
-    {
-        text: "Job Offer - Senior Marketing Manager: Thank you for interviewing with our team last week. We'd like to extend an offer for the Senior Marketing Manager position. The starting salary is $95,000 with full benefits. Please review the attached offer letter and return the signed document by Friday. We're excited to have you join our team! Feel free to call HR at (555) 234-5678 with any questions.",
+        sender: "Microsoft 365",
+        number: "+1 (800) 642-7676",
+        time: "Thursday 2:19 PM",
+        text: "Your Microsoft 365 subscription expires in 7 days on Nov 17, 2024. To continue using Word, Excel, PowerPoint and 1TB OneDrive storage, your subscription will auto-renew at $69.99/year. No action needed if auto-renewal is on. Manage your subscription at account.microsoft.com or call 1-800-642-7676. Thank you for being a valued subscriber!",
         scamIndices: []
     },
     {
-        text: "FAFSA Financial Aid Update: You have been selected to receive an emergency grant of $6,400 for the current semester. This is a special COVID relief fund for students. Claim your grant by verifying your student information at fafsa-emergency-grants.com. Enter your SSN and bank account details to receive your direct deposit within 48 hours.",
-        scamIndices: [0, 1, 2, 3]
+        sender: "Walmart Rewards",
+        number: "+1 (844) 925-6278",
+        time: "Friday 4:41 PM",
+        text: "🎉 WINNER ALERT! You've been selected for a $500 Walmart gift card! To claim your prize, verify your identity at walmart-rewards-claim.net within 48 hours. Complete a 2-min survey about your shopping habits. This is time-sensitive - prizes expire fast! Our call center is overwhelmed with winners right now so please use the website only. Don't miss out! Winner Code: WM-2024-8847 ✨",
+        scamIndices: [0, 1, 2, 3, 4]
     },
     {
-        text: "Student Financial Aid Office: Your financial aid application has been processed. Your aid package for the Fall 2025 semester includes a $3,500 Pell Grant and $2,000 in subsidized loans. Please review your award letter by logging into the student portal at portal.university.edu. Contact our office at financialaid@university.edu if you have questions about your package.",
-        scamIndices: []
-    },
-    {
-        text: "Mom, it's me! I'm in trouble and I need your help urgently. I got arrested for a DUI last night and I'm at the police station. I need $2,500 for bail right now or I'll be stuck here all weekend. Please don't tell Dad! Can you wire the money to this number? The officer said I can only make this one call. Please hurry!",
-        scamIndices: [0, 2, 3, 4]
-    },
-    {
-        text: "Hey Dad! My car broke down on the highway and I need a tow. The tow truck guy says it's $180 but he only takes Venmo or Cash App. Can you send it to @Towtruck_Mike? I'm stuck on I-95 near exit 47. My phone is dying so I might not respond right away. Thanks so much, I'll pay you back!",
-        scamIndices: [2, 3]
-    },
-    {
-        text: "Hi everyone! As you know, Emma's soccer team made it to the state championship tournament! We're raising money to help cover travel costs, hotel rooms, and new uniforms. If you'd like to contribute, you can Venmo me @SarahJ_Mom or drop off a check at our house. Any amount helps! The tournament is in two weeks. Thanks for supporting the team! - Aunt Sarah",
-        scamIndices: []
-    },
-    {
-        text: "Hey family! Just wanted to share some exciting news - Jackson got accepted into the advanced music program at school! We're so proud. The program costs $500 for the semester which includes private lessons and instrument rental. If anyone wants to contribute to his music education fund, we set up a GoFundMe page. No pressure at all! Hope everyone is doing well. Love, Aunt Michelle",
-        scamIndices: []
-    },
-    {
-        text: "ALERT: Your Bank of America account has been charged $3,429.00 for a purchase at Walmart in Houston, TX. If you did not authorize this transaction, call us immediately at 1-888-555-0147 to dispute the charge. Your card will be locked until we hear from you. Reference case #BOA-8473629. Do not delay!",
-        scamIndices: [1, 4]
-    },
-    {
-        text: "Wells Fargo Security Notice: A charge of $897.50 at Target in Phoenix, AZ was declined due to suspected fraud. We've temporarily locked your debit card ending in 4721 to protect your account. Please call the number on the back of your card at 1-800-869-3557 to verify recent transactions. You can also manage your card security through the Wells Fargo mobile app.",
-        scamIndices: []
-    },
-    {
-        text: "Important Voter Information: Verify your voter registration status before Election Day! Due to recent system updates, some registrations were not properly processed. Confirm your registration now at vote-registration-verify.org to ensure your vote counts. Enter your SSN, driver's license number, and date of birth to check your status. Deadline is in 3 days!",
-        scamIndices: [1, 2, 3]
-    },
-    {
-        text: "Your 2024 Ballot Has Been Received: Thank you for voting! Your mail-in ballot was received and accepted by the County Elections Office on November 3rd, 2024. You can track your ballot status anytime at the official county website. If you have questions, contact the Elections Office at (555) 789-0123 during business hours.",
+        sender: "Chase Bank",
+        number: "+1 (800) 935-9935",
+        time: "Saturday 9:33 AM",
+        text: "Chase Fraud Alert: We blocked a $2,450.00 charge at Best Buy in Los Angeles, CA on your Chase debit card. If this wasn't you, call 1-800-935-9935 immediately or use the Chase app to report fraud. Your card is temporarily locked for protection. DO NOT share your PIN or full card number with anyone. We'll never ask for that info. Reference #: CH-FR-8847",
         scamIndices: []
     }
 ];
@@ -162,11 +174,18 @@ const messageContent = document.getElementById('messageContent');
 const currentMessageSpan = document.getElementById('currentMessage');
 const correctCountSpan = document.getElementById('correctCount');
 const strikeCountSpan = document.getElementById('strikeCount');
+const contactName = document.getElementById('contactName');
+const contactNumber = document.getElementById('contactNumber');
+const messageTime = document.getElementById('messageTime');
 
 // Event Listeners
 startBtn.addEventListener('click', startGame);
 nextBtn.addEventListener('click', nextMessage);
 restartBtn.addEventListener('click', restartGame);
+
+// Make contact info clickable
+contactName.addEventListener('click', () => handleContactClick('name'));
+contactNumber.addEventListener('click', () => handleContactClick('number'));
 
 // Game Functions
 function startGame() {
@@ -177,7 +196,7 @@ function startGame() {
     incorrectCount = 0;
     strikes = 0;
     
-    // Select 5 random messages from the pool of 20
+    // Select 5 random messages from the pool
     selectedMessages = shuffleArray(messages).slice(0, MESSAGES_PER_GAME);
     
     updateScore();
@@ -188,6 +207,11 @@ function loadMessage() {
     const message = selectedMessages[currentMessageIndex];
     clickedSentences.clear();
     
+    // Set contact info
+    contactName.textContent = message.sender;
+    contactNumber.textContent = message.number;
+    messageTime.textContent = message.time;
+    
     // Split text into sentences
     const sentences = message.text.match(/[^.!?]+[.!?]+/g) || [message.text];
     totalSentences = sentences.length;
@@ -195,12 +219,20 @@ function loadMessage() {
     // Update progress
     currentMessageSpan.textContent = currentMessageIndex + 1;
     
-    // Create clickable sentences
+    // Create clickable sentences with link detection
     messageContent.innerHTML = '';
     sentences.forEach((sentence, index) => {
         const span = document.createElement('span');
         span.className = 'sentence';
-        span.textContent = sentence;
+        
+        // Check if sentence contains a URL and make it glow
+        if (sentence.match(/https?:\/\/[^\s]+|www\.[^\s]+|\.[a-z]{2,6}\/[^\s]+/i)) {
+            span.innerHTML = sentence.replace(/(https?:\/\/[^\s]+|www\.[^\s]+|[a-z0-9-]+\.[a-z]{2,6}\/[^\s]+)/gi, 
+                '<span class="link">$1</span>');
+        } else {
+            span.textContent = sentence;
+        }
+        
         span.dataset.index = index;
         span.addEventListener('click', () => handleSentenceClick(index, message.scamIndices));
         messageContent.appendChild(span);
@@ -208,6 +240,47 @@ function loadMessage() {
     });
     
     nextBtn.classList.add('hidden');
+}
+
+function handleContactClick(type) {
+    const message = selectedMessages[currentMessageIndex];
+    const isSuspicious = message.number.includes('+1') && (
+        message.sender === 'Unknown' || 
+        message.sender === 'Unknown Sender' ||
+        !message.number.match(/^[\(\d\s\)-]+$/) // Check if number looks weird
+    );
+    
+    if (isSuspicious) {
+        // Correct - identified suspicious contact
+        correctCount++;
+        if (type === 'name') {
+            contactName.style.backgroundColor = 'rgba(50, 215, 75, 0.3)';
+            contactName.style.color = '#32d74b';
+        } else {
+            contactNumber.style.backgroundColor = 'rgba(50, 215, 75, 0.3)';
+            contactNumber.style.color = '#32d74b';
+        }
+    } else {
+        // Incorrect - this is a legit contact
+        strikes++;
+        incorrectCount++;
+        if (type === 'name') {
+            contactName.style.backgroundColor = 'rgba(255, 69, 58, 0.3)';
+            contactName.style.color = '#ff453a';
+        } else {
+            contactNumber.style.backgroundColor = 'rgba(255, 69, 58, 0.3)';
+            contactNumber.style.color = '#ff453a';
+        }
+        
+        if (strikes >= MAX_STRIKES) {
+            setTimeout(() => {
+                gameOver();
+            }, 1000);
+            return;
+        }
+    }
+    
+    updateScore();
 }
 
 function handleSentenceClick(index, scamIndices) {
@@ -254,6 +327,12 @@ function updateScore() {
 }
 
 function nextMessage() {
+    // Reset contact info colors
+    contactName.style.backgroundColor = '';
+    contactName.style.color = '';
+    contactNumber.style.backgroundColor = '';
+    contactNumber.style.color = '';
+    
     currentMessageIndex++;
     
     if (currentMessageIndex < selectedMessages.length) {

@@ -5,8 +5,8 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    background: #000;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -16,12 +16,369 @@ body {
 
 .container {
     width: 100%;
-    max-width: 700px;
+    max-width: 420px;
+    background: #000;
+    border-radius: 45px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    border: 12px solid #1c1c1e;
+    position: relative;
+}
+
+/* iPhone Notch */
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 30px;
+    background: #1c1c1e;
+    border-radius: 0 0 20px 20px;
+    z-index: 100;
+}
+
+/* Screen Management */
+.screen {
+    display: none;
+    background: #000;
+    min-height: 600px;
+}
+
+.screen.active {
+    display: block;
+}
+
+/* Start Screen */
+#startScreen {
+    text-align: center;
+    padding: 80px 30px 40px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#startScreen h1 {
+    font-size: 2.5em;
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+#startScreen p {
+    font-size: 1.1em;
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Buttons */
+.btn-primary {
     background: white;
+    color: #667eea;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.2em;
+    font-weight: 600;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+}
+
+.btn-primary.hidden {
+    display: none;
+}
+
+/* iPhone Message View */
+#gameScreen {
+    background: #000;
+    min-height: 600px;
+}
+
+/* iMessage Header */
+.imessage-header {
+    background: #1c1c1e;
+    padding: 50px 20px 15px;
+    border-bottom: 0.5px solid #38383a;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    margin: 0 auto 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.contact-name {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 2px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.contact-name:hover {
+    background: #2c2c2e;
+}
+
+.contact-number {
+    font-size: 12px;
+    color: #8e8e93;
+    cursor: pointer;
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.contact-number:hover {
+    background: #2c2c2e;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #1c1c1e;
+    border-bottom: 0.5px solid #38383a;
+}
+
+.progress {
+    font-size: 0.9em;
+    color: #8e8e93;
+    font-weight: 500;
+}
+
+.score {
+    display: flex;
+    gap: 12px;
+    font-size: 0.9em;
+}
+
+.strikes {
+    color: #ff453a;
+    font-weight: 600;
+}
+
+.correct {
+    color: #32d74b;
+    font-weight: 600;
+}
+
+/* Message Container */
+.message-container {
+    background: #000;
+    padding: 20px 15px;
+    min-height: 400px;
+    max-height: 450px;
+    overflow-y: auto;
+}
+
+.message-bubble {
+    background: #1c1c1e;
+    border-radius: 18px;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    max-width: 85%;
+    position: relative;
+}
+
+.message-time {
+    font-size: 11px;
+    color: #8e8e93;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.message-sender {
+    font-size: 12px;
+    color: #8e8e93;
+    margin-bottom: 5px;
+}
+
+#messageContent {
+    line-height: 1.5;
+    font-size: 15px;
+    color: #fff;
+}
+
+/* Sentence Styling */
+.sentence {
+    display: inline;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 3px;
+    padding: 2px 0;
+}
+
+.sentence:hover:not(.clicked) {
+    background-color: rgba(142, 142, 147, 0.3);
+}
+
+.sentence.clicked {
+    cursor: default;
+    pointer-events: none;
+}
+
+.sentence.correct {
+    background-color: rgba(50, 215, 75, 0.3);
+    color: #32d74b;
+}
+
+.sentence.incorrect {
+    background-color: rgba(255, 69, 58, 0.3);
+    color: #ff453a;
+}
+
+.sentence.correct::after {
+    content: " ✓";
+    color: #32d74b;
+}
+
+.sentence.incorrect::after {
+    content: " ✗";
+    color: #ff453a;
+}
+
+/* Link Styling */
+.link {
+    color: #0a84ff;
+    text-decoration: underline;
+    cursor: pointer;
+    animation: linkGlow 2s ease-in-out infinite;
+}
+
+@keyframes linkGlow {
+    0%, 100% {
+        text-shadow: 0 0 5px rgba(10, 132, 255, 0.5);
+    }
+    50% {
+        text-shadow: 0 0 10px rgba(10, 132, 255, 0.8);
+    }
+}
+
+.link:hover {
+    color: #409cff;
+}
+
+#nextBtn {
+    display: block;
+    margin: 15px auto;
+    background: #0a84ff;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1em;
+    font-weight: 600;
     border-radius: 20px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+#nextBtn:hover {
+    background: #409cff;
+}
+
+/* End Screen */
+#endScreen {
+    text-align: center;
+    padding: 80px 30px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#endScreen h1 {
+    font-size: 2.5em;
+    color: white;
+    margin-bottom: 30px;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.final-score {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
     padding: 30px;
-    min-height: 500px;
+    margin-bottom: 30px;
+}
+
+.final-score p {
+    font-size: 1.2em;
+    color: white;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.accuracy {
+    font-size: 1.5em !important;
+    font-weight: bold;
+    color: white;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 450px) {
+    .container {
+        border-radius: 0;
+        border: none;
+        max-width: 100%;
+        box-shadow: none;
+    }
+    
+    .container::before {
+        display: none;
+    }
+
+    #startScreen h1,
+    #endScreen h1 {
+        font-size: 2em;
+    }
+}
+
+/* Scrollbar Styling */
+.message-container::-webkit-scrollbar {
+    width: 5px;
+}
+
+.message-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.message-container::-webkit-scrollbar-thumb {
+    background: #3a3a3c;
+    border-radius: 10px;
+}
+
+.message-container::-webkit-scrollbar-thumb:hover {
+    background: #48484a;
 }
 
 /* Screen Management */

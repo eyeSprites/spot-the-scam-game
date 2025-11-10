@@ -11,23 +11,35 @@
         <!-- Start Screen -->
         <div id="startScreen" class="screen active">
             <h1>🎮 Spot the Scam!</h1>
-            <p>Read each message carefully and tap ONLY the sentences that are scams. If you incorrectly mark 3 safe sentences as scams, you lose!</p>
-            <p style="font-size: 0.9em; color: #999; margin-top: 10px;">⚠️ Be careful - only click sentences you're SURE are scams!</p>
+            <p>You'll see text messages that look real. Tap on the parts that seem like scams - things that create urgency, ask for money/info, or make excuses.</p>
+            <p style="font-size: 0.95em; margin-top: 15px;">⚠️ Be careful! 3 wrong taps and you lose!</p>
+            <p style="font-size: 0.85em; color: rgba(255,255,255,0.8); margin-top: 10px;">Click suspicious phone numbers or glowing links if they look fake!</p>
             <button id="startBtn" class="btn-primary">Start Game</button>
         </div>
 
         <!-- Game Screen -->
         <div id="gameScreen" class="screen">
+            <div class="imessage-header">
+                <div class="contact-info">
+                    <div class="contact-photo">📱</div>
+                    <div class="contact-name" id="contactName">Unknown Sender</div>
+                    <div class="contact-number" id="contactNumber">(555) 000-0000</div>
+                </div>
+            </div>
+            
             <div class="header">
-                <div class="progress">Message <span id="currentMessage">1</span> of 10</div>
+                <div class="progress">Message <span id="currentMessage">1</span> of 5</div>
                 <div class="score">
-                    <span class="strikes">❌ Strikes: <span id="strikeCount">0</span>/3</span>
+                    <span class="strikes">❌ <span id="strikeCount">0</span>/3</span>
                     <span class="correct">✅ <span id="correctCount">0</span></span>
                 </div>
             </div>
 
             <div class="message-container">
-                <div id="messageContent"></div>
+                <div class="message-time" id="messageTime">Today 1:23 PM</div>
+                <div class="message-bubble">
+                    <div id="messageContent"></div>
+                </div>
             </div>
 
             <button id="nextBtn" class="btn-primary hidden">Next Message</button>
