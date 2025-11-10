@@ -11,17 +11,18 @@
         <!-- Start Screen -->
         <div id="startScreen" class="screen active">
             <h1>🎮 Spot the Scam!</h1>
-            <p>Read each message carefully and tap on sentences that look suspicious or scammy.</p>
+            <p>Read each message carefully and tap ONLY the sentences that are scams. If you incorrectly mark 3 safe sentences as scams, you lose!</p>
+            <p style="font-size: 0.9em; color: #999; margin-top: 10px;">⚠️ Be careful - only click sentences you're SURE are scams!</p>
             <button id="startBtn" class="btn-primary">Start Game</button>
         </div>
 
         <!-- Game Screen -->
         <div id="gameScreen" class="screen">
             <div class="header">
-                <div class="progress">Message <span id="currentMessage">1</span> of 5</div>
+                <div class="progress">Message <span id="currentMessage">1</span> of 10</div>
                 <div class="score">
+                    <span class="strikes">❌ Strikes: <span id="strikeCount">0</span>/3</span>
                     <span class="correct">✅ <span id="correctCount">0</span></span>
-                    <span class="incorrect">❌ <span id="incorrectCount">0</span></span>
                 </div>
             </div>
 

@@ -112,6 +112,11 @@ body {
     font-size: 1.1em;
 }
 
+.strikes {
+    color: #ef4444;
+    font-weight: 600;
+}
+
 .correct {
     color: #10b981;
     font-weight: 600;
