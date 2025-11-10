@@ -26,6 +26,7 @@ body {
 /* Screen Management */
 .screen {
     display: none;
+    flex-direction: column;
     animation: fadeIn 0.5s ease-in;
 }
 
@@ -50,8 +51,6 @@ body {
     padding: 60px 30px;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     min-height: 500px;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -99,16 +98,10 @@ body {
     display: none;
 }
 
-/* Message View */
+/* Game Screen */
 #gameScreen {
     background: #000;
     min-height: 500px;
-    display: flex;
-    flex-direction: column;
-}
-
-#gameScreen.active {
-    display: flex;
 }
 
 /* Message Header */
@@ -220,12 +213,6 @@ body {
     margin-bottom: 10px;
 }
 
-.message-sender {
-    font-size: 12px;
-    color: #8e8e93;
-    margin-bottom: 5px;
-}
-
 #messageContent {
     line-height: 1.5;
     font-size: 15px;
@@ -314,8 +301,6 @@ body {
     padding: 60px 30px;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     min-height: 500px;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
