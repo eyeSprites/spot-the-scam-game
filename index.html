@@ -1,122 +1,61 @@
-<!DOCTYPE html><!DOCTYPE html>
-
-<html lang="en"><html lang="en">
-
-<head><head>
-
-    <meta charset="UTF-8">    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Spot the Scam! - Cybersecurity Game</title>    <title>Spot the Scam! - Cybersecurity Game</title>
-
-    <link rel="stylesheet" href="style.css">    <link rel="stylesheet" href="style.css">
-
-</head></head>
-
-<body><body>
-
-    <div class="container">    <div class="container">
-
-        <!-- Start Screen -->        <!-- Start Screen -->
-
-        <div id="startScreen" class="screen active">        <div id="startScreen" class="screen active">
-
-            <h1>🎮 Spot the Scam!</h1>            <h1>🎮 Spot the Scam!</h1>
-
-            <p>You'll see text messages that look real. Tap on the parts that seem like scams - things that create urgency, ask for money/info, or make excuses.</p>            <p>You'll see text messages that look real. Tap on the parts that seem like scams - things that create urgency, ask for money/info, or make excuses.</p>
-
-            <p style="font-size: 0.95em; margin-top: 15px;">⚠️ Be careful! 3 wrong taps and you lose!</p>            <p style="font-size: 0.95em; margin-top: 15px;">⚠️ Be careful! 3 wrong taps and you lose!</p>
-
-            <p style="font-size: 0.85em; color: rgba(255,255,255,0.8); margin-top: 10px;">Click suspicious phone numbers or glowing links if they look fake!</p>            <p style="font-size: 0.85em; color: rgba(255,255,255,0.8); margin-top: 10px;">Click suspicious phone numbers or glowing links if they look fake!</p>
-
-            <button id="startBtn" class="btn-primary">Start Game</button>            <button id="startBtn" class="btn-primary">Start Game</button>
-
-        </div>        </div>
-
-
-
-        <!-- Game Screen -->        <!-- Game Screen -->
-
-        <div id="gameScreen" class="screen">        <div id="gameScreen" class="screen">
-
-            <div class="imessage-header">            <div class="imessage-header">
-
-                <div class="contact-info">                <div class="contact-info">
-
-                    <div class="contact-photo">📱</div>                    <div class="contact-photo">📱</div>
-
-                    <div class="contact-name" id="contactName">Unknown Sender</div>                    <div class="contact-name" id="contactName">Unknown Sender</div>
-
-                    <div class="contact-number" id="contactNumber">(555) 000-0000</div>                    <div class="contact-number" id="contactNumber">(555) 000-0000</div>
-
-                </div>                </div>
-
-            </div>            </div>
-
-                        
-
-            <div class="header">            <div class="header">
-
-                <div class="progress">Message <span id="currentMessage">1</span> of 5</div>                <div class="progress">Message <span id="currentMessage">1</span> of 5</div>
-
-                <div class="score">                <div class="score">
-
-                    <span class="strikes">❌ <span id="strikeCount">0</span>/3</span>                    <span class="strikes">❌ <span id="strikeCount">0</span>/3</span>
-
-                    <span class="correct">✅ <span id="correctCount">0</span></span>                    <span class="correct">✅ <span id="correctCount">0</span></span>
-
-                </div>                </div>
-
-            </div>            </div>
-
-
-
-            <div class="message-container">            <div class="message-container">
-
-                <div class="message-time" id="messageTime">Today 1:23 PM</div>                <div class="message-time" id="messageTime">Today 1:23 PM</div>
-
-                <div class="message-bubble">                <div class="message-bubble">
-
-                    <div id="messageContent"></div>                    <div id="messageContent"></div>
-
-                </div>                </div>
-
-            </div>            </div>
-
-
-
-            <button id="nextBtn" class="btn-primary hidden">Next Message</button>            <button id="nextBtn" class="btn-primary hidden">Next Message</button>
-
-        </div>        </div>
-
-
-
-        <!-- End Screen -->        <!-- End Screen -->
-
-        <div id="endScreen" class="screen">        <div id="endScreen" class="screen">
-
-            <h1>🎉 Game Complete!</h1>            <h1>🎉 Game Complete!</h1>
-
-            <div class="final-score">            <div class="final-score">
-
-                <p>You identified <span id="finalCorrect">0</span> out of <span id="totalScam">0</span> scam sentences correctly!</p>                <p>You identified <span id="finalCorrect">0</span> out of <span id="totalScam">0</span> scam sentences correctly!</p>
-
-                <p class="accuracy">Accuracy: <span id="accuracy">0</span>%</p>                <p class="accuracy">Accuracy: <span id="accuracy">0</span>%</p>
-
-            </div>            </div>
-
-            <button id="restartBtn" class="btn-primary">Play Again</button>            <button id="restartBtn" class="btn-primary">Play Again</button>
-
-        </div>        </div>
-
-    </div>    </div>
-
-
-
-    <script src="script.js"></script>    <script src="script.js"></script>
-
-</body></body>
-
-</html></html>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spot the Scam! - Cybersecurity Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Start Screen -->
+        <div id="startScreen" class="screen active">
+            <h1>🎮 Spot the Scam!</h1>
+            <p>You'll see text messages that look real. Tap on the parts that seem like scams - things that create urgency, ask for money/info, or make excuses.</p>
+            <p style="font-size: 0.95em; margin-top: 15px;">⚠️ Be careful! 3 wrong taps and you lose!</p>
+            <p style="font-size: 0.85em; color: rgba(255,255,255,0.8); margin-top: 10px;">Click suspicious phone numbers or glowing links if they look fake!</p>
+            <button id="startBtn" class="btn-primary">Start Game</button>
+        </div>
+
+        <!-- Game Screen -->
+        <div id="gameScreen" class="screen">
+            <div class="imessage-header">
+                <div class="contact-info">
+                    <div class="contact-photo">📱</div>
+                    <div class="contact-name" id="contactName">Unknown Sender</div>
+                    <div class="contact-number" id="contactNumber">(555) 000-0000</div>
+                </div>
+            </div>
+            
+            <div class="header">
+                <div class="progress">Message <span id="currentMessage">1</span> of 5</div>
+                <div class="score">
+                    <span class="strikes">❌ <span id="strikeCount">0</span>/3</span>
+                    <span class="correct">✅ <span id="correctCount">0</span></span>
+                </div>
+            </div>
+
+            <div class="message-container">
+                <div class="message-time" id="messageTime">Today 1:23 PM</div>
+                <div class="message-bubble">
+                    <div id="messageContent"></div>
+                </div>
+            </div>
+
+            <button id="nextBtn" class="btn-primary hidden">Next Message</button>
+        </div>
+
+        <!-- End Screen -->
+        <div id="endScreen" class="screen">
+            <h1>🎉 Game Complete!</h1>
+            <div class="final-score">
+                <p>You identified <span id="finalCorrect">0</span> out of <span id="totalScam">0</span> scam sentences correctly!</p>
+                <p class="accuracy">Accuracy: <span id="accuracy">0</span>%</p>
+            </div>
+            <button id="restartBtn" class="btn-primary">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
