@@ -79,6 +79,54 @@ const messages = [
     {
         text: "Netflix account on hold: Your last payment was declined. Update your payment method within 24 hours to avoid account suspension. Click here to update billing: netflix-billing-update.com. You won't be able to watch anything until this is resolved. We value you as a member!",
         scamIndices: [0, 1, 2]
+    },
+    {
+        text: "Congratulations on your application! We're excited to offer you a position as Remote Customer Service Representative at Amazon. This is a work-from-home opportunity earning $45/hour. To complete your onboarding, purchase your home office equipment package for $299 at amazon-careers-shop.com. You'll be reimbursed on your first paycheck. Start date is next Monday!",
+        scamIndices: [2, 3]
+    },
+    {
+        text: "Job Offer - Senior Marketing Manager: Thank you for interviewing with our team last week. We'd like to extend an offer for the Senior Marketing Manager position. The starting salary is $95,000 with full benefits. Please review the attached offer letter and return the signed document by Friday. We're excited to have you join our team! Feel free to call HR at (555) 234-5678 with any questions.",
+        scamIndices: []
+    },
+    {
+        text: "FAFSA Financial Aid Update: You have been selected to receive an emergency grant of $6,400 for the current semester. This is a special COVID relief fund for students. Claim your grant by verifying your student information at fafsa-emergency-grants.com. Enter your SSN and bank account details to receive your direct deposit within 48 hours.",
+        scamIndices: [0, 1, 2, 3]
+    },
+    {
+        text: "Student Financial Aid Office: Your financial aid application has been processed. Your aid package for the Fall 2025 semester includes a $3,500 Pell Grant and $2,000 in subsidized loans. Please review your award letter by logging into the student portal at portal.university.edu. Contact our office at financialaid@university.edu if you have questions about your package.",
+        scamIndices: []
+    },
+    {
+        text: "Mom, it's me! I'm in trouble and I need your help urgently. I got arrested for a DUI last night and I'm at the police station. I need $2,500 for bail right now or I'll be stuck here all weekend. Please don't tell Dad! Can you wire the money to this number? The officer said I can only make this one call. Please hurry!",
+        scamIndices: [0, 2, 3, 4]
+    },
+    {
+        text: "Hey Dad! My car broke down on the highway and I need a tow. The tow truck guy says it's $180 but he only takes Venmo or Cash App. Can you send it to @Towtruck_Mike? I'm stuck on I-95 near exit 47. My phone is dying so I might not respond right away. Thanks so much, I'll pay you back!",
+        scamIndices: [2, 3]
+    },
+    {
+        text: "Hi everyone! As you know, Emma's soccer team made it to the state championship tournament! We're raising money to help cover travel costs, hotel rooms, and new uniforms. If you'd like to contribute, you can Venmo me @SarahJ_Mom or drop off a check at our house. Any amount helps! The tournament is in two weeks. Thanks for supporting the team! - Aunt Sarah",
+        scamIndices: []
+    },
+    {
+        text: "Hey family! Just wanted to share some exciting news - Jackson got accepted into the advanced music program at school! We're so proud. The program costs $500 for the semester which includes private lessons and instrument rental. If anyone wants to contribute to his music education fund, we set up a GoFundMe page. No pressure at all! Hope everyone is doing well. Love, Aunt Michelle",
+        scamIndices: []
+    },
+    {
+        text: "ALERT: Your Bank of America account has been charged $3,429.00 for a purchase at Walmart in Houston, TX. If you did not authorize this transaction, call us immediately at 1-888-555-0147 to dispute the charge. Your card will be locked until we hear from you. Reference case #BOA-8473629. Do not delay!",
+        scamIndices: [1, 4]
+    },
+    {
+        text: "Wells Fargo Security Notice: A charge of $897.50 at Target in Phoenix, AZ was declined due to suspected fraud. We've temporarily locked your debit card ending in 4721 to protect your account. Please call the number on the back of your card at 1-800-869-3557 to verify recent transactions. You can also manage your card security through the Wells Fargo mobile app.",
+        scamIndices: []
+    },
+    {
+        text: "Important Voter Information: Verify your voter registration status before Election Day! Due to recent system updates, some registrations were not properly processed. Confirm your registration now at vote-registration-verify.org to ensure your vote counts. Enter your SSN, driver's license number, and date of birth to check your status. Deadline is in 3 days!",
+        scamIndices: [1, 2, 3]
+    },
+    {
+        text: "Your 2024 Ballot Has Been Received: Thank you for voting! Your mail-in ballot was received and accepted by the County Elections Office on November 3rd, 2024. You can track your ballot status anytime at the official county website. If you have questions, contact the Elections Office at (555) 789-0123 during business hours.",
+        scamIndices: []
     }
 ];
 
