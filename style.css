@@ -26,12 +26,22 @@ body {
 /* Screen Management */
 .screen {
     display: none;
-    background: #000;
-    min-height: 600px;
+    animation: fadeIn 0.5s ease-in;
 }
 
 .screen.active {
-    display: block;
+    display: flex;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Start Screen */
@@ -93,6 +103,12 @@ body {
 #gameScreen {
     background: #000;
     min-height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+#gameScreen.active {
+    display: flex;
 }
 
 /* Message Header */
