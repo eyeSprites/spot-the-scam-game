@@ -1,27 +1,22 @@
 // Game Data
 const messages = [
     {
-        id: 1,
         text: "Hello valued customer, this is to inform you that your Chase Bank account has been temporarily locked due to suspicious login attempts from an unknown device in another country. To protect your funds, please verify your account information immediately by clicking the secure link below. If you do not take action within the next 24 hours, your account may be permanently suspended for security reasons. We understand this may cause inconvenience, but your cooperation is essential to maintain your financial safety. Please provide your date of birth, card number, and PIN on the verification page to unlock your account. Thank you for your prompt attention.",
         scamIndices: [1, 3, 4, 7]
     },
     {
-        id: 2,
         text: "Hi Samantha, just a quick reminder about our staff meeting on Thursday at 10 AM in the main conference room. We'll be reviewing the upcoming marketing launch plan and assigning responsibilities for next week. Please make sure to bring the revised PowerPoint slides and your updated sales report. If you're unable to attend in person, you can join via the Zoom link we used last time. Let me know if you have any conflicts. Thanks again for your hard work this quarter — it's really paying off!",
         scamIndices: []
     },
     {
-        id: 3,
         text: "Congratulations! You've been selected as the grand prize winner in our national customer appreciation sweepstakes. You are eligible to receive an exclusive reward of $1,000 in prepaid Visa gift cards, but to confirm your identity and ship your prize, we need you to fill out a short form. Please include your full name, address, phone number, and credit card for identity verification purposes. This offer expires in 12 hours, so don't delay! Click the link below to claim your reward now. Failure to respond in time will result in forfeiture of your prize.",
         scamIndices: [1, 4, 5, 6]
     },
     {
-        id: 4,
         text: "This is the IRS Fraud Department contacting you regarding a serious issue with your tax filings. Our records indicate that you have unpaid taxes from the last fiscal year, and if this is not resolved immediately, a warrant will be issued for your arrest. To avoid further legal action, please submit your payment using Apple or Google Play gift cards. Once purchased, send us the codes so we can verify your payment and close your case. Do not contact anyone else or share this notice, as it may delay the processing of your file.",
         scamIndices: [1, 2, 3, 4]
     },
     {
-        id: 5,
         text: "Your recent Amazon order #437-1125890-222 has shipped and is expected to arrive by Friday. You can track your package using the official Amazon tracking page linked below. If you have any issues with your order, please visit the Help Center or contact customer support through your Amazon account. Do not reply to this email, as this inbox is not monitored. Thank you for shopping with us!",
         scamIndices: []
     }
