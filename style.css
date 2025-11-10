@@ -43,6 +43,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 #startScreen h1 {
@@ -55,8 +56,9 @@ body {
 #startScreen p {
     font-size: 1.1em;
     color: rgba(255, 255, 255, 0.95);
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     line-height: 1.6;
+    max-width: 400px;
 }
 
 /* Buttons */
@@ -64,13 +66,14 @@ body {
     background: white;
     color: #667eea;
     border: none;
-    padding: 15px 40px;
+    padding: 15px 50px;
     font-size: 1.2em;
     font-weight: 600;
     border-radius: 25px;
     cursor: pointer;
     transition: transform 0.2s, box-shadow 0.2s;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
 }
 
 .btn-primary:hover {
@@ -274,11 +277,11 @@ body {
 
 #nextBtn {
     display: block;
-    margin: 15px auto;
+    margin: 15px auto 20px;
     background: #0a84ff;
     color: white;
     border: none;
-    padding: 12px 30px;
+    padding: 12px 35px;
     font-size: 1em;
     font-weight: 600;
     border-radius: 20px;
@@ -298,6 +301,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 #endScreen h1 {
@@ -308,11 +312,13 @@ body {
 }
 
 .final-score {
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
     border-radius: 20px;
     padding: 30px;
     margin-bottom: 30px;
+    max-width: 400px;
+    width: 100%;
 }
 
 .final-score p {
