@@ -4,43 +4,43 @@ const messages = [
         sender: "USPS",
         number: "+44 7911 123456",
         time: "Tuesday 1:01 PM",
-        text: "U.S. Postal Service Alert:\n\nYou have a USPS parcel (#US847291938472) currently being cleared at our distribution center. Due to the detection of an invalid or incomplete zip code address, the parcel cannot be cleared and has been temporarily detained.\n\nPlease confirm your zip code address information through the secure link within 24 hours or the package will be automatically returned to sender.\n\nVisit: https://usps-clearance-portal.com/verify\n\nOur main verification system is temporarily down for maintenance, so you must use this secure link to update your information immediately. Failure to respond within 24 hours will result in permanent package destruction and a $45 processing fee.\n\nConfirmation Code: USPS-2024-9472",
-        scamIndices: [1, 2, 3, 4, 5]
+        text: "U.S. Postal Service Alert:\n\nYou have a USPS parcel (#US847291938472) currently being cleared at our distribution center.\n\nDue to the detection of an invalid or incomplete zip code address, the parcel cannot be cleared and has been temporarily detained.\n\nPlease confirm your zip code address information through the secure link within 24 hours or the package will be automatically returned to sender.\n\nVisit:\nhttps://usps-clearance-portal.com/verify\n\nOur main verification system is temporarily down for maintenance, so you must use this secure link to update your information immediately.\n\nFailure to respond within 24 hours will result in permanent package destruction and a $45 processing fee.\n\nConfirmation Code: USPS-2024-9472",
+        scamIndices: [1, 2, 3, 4, 5, 6, 7]
     },
     {
         sender: "FedEx Delivery",
         number: "+91 98765 43210",
         time: "Monday 9:22 AM",
-        text: "FedEx Express URGENT Delivery Alert:\n\nYour package delivery (Tracking #FDX8847291847) has been suspended due to incomplete address information in our system. Our driver attempted delivery 3 times on November 10th, 11th, and 12th but was unable to access your building or reach you by phone.\n\nYou must pay a mandatory $5 redelivery processing fee within the next 48 hours to reschedule delivery. If payment is not received immediately, the package will be returned to sender and you will forfeit the contents.\n\nVisit our secure payment portal: fedex-reschedule-delivery.net/pay\n\nOur standard credit card processing system is currently under emergency maintenance, so all payments must be made through the secure online portal only. Phone support is unavailable at this time.\n\nPackage Contents: Electronics\nOriginal Delivery Fee: $13\nRedelivery Fee: $5",
-        scamIndices: [1, 2, 3, 4, 5]
+        text: "FedEx Express URGENT Delivery Alert:\n\nYour package delivery (Tracking #FDX8847291847) has been suspended due to incomplete address information in our system.\n\nOur driver attempted delivery 3 times on November 10th, 11th, and 12th but was unable to access your building or reach you by phone.\n\nYou must pay a mandatory $5 redelivery processing fee within the next 48 hours to reschedule delivery.\n\nIf payment is not received immediately, the package will be returned to sender and you will forfeit the contents.\n\nVisit our secure payment portal:\nfedex-reschedule-delivery.net/pay\n\nOur standard credit card processing system is currently under emergency maintenance, so all payments must be made through the secure online portal only.\n\nPhone support is unavailable at this time.\n\nPackage Contents: Electronics\nOriginal Delivery Fee: $13\nRedelivery Fee: $5",
+        scamIndices: [1, 2, 3, 4, 5, 6, 7, 8]
     },
     {
         sender: "IRS Tax Services",
         number: "+234 802 555 0199",
         time: "Friday 8:15 AM",
-        text: "FINAL LEGAL NOTICE - Internal Revenue Service:\n\nIRS records indicate that you owe $4,287 in unpaid federal back taxes for fiscal year 2023. This debt is now 90 days past due and has been escalated to our Priority Resolution Department.\n\nYou have exactly 24 hours from receipt of this message to contact us or a federal arrest warrant will be issued in your name for tax evasion. Payment can only be accepted via Apple gift cards ($500 denominations) or Google Play gift cards due to our emergency system maintenance.\n\nCall our Priority Resolution Department immediately at: 1-866-441-2155\n\nOur secure online payment portal is temporarily offline for critical security updates and will not be available for 72 hours. We cannot accept checks, credit cards, or bank transfers at this time due to federal privacy regulations.\n\nThis is your final warning before legal action is taken and your assets are frozen.\n\nCase Number: IRS-FR-2024-8847\nAmount Due: $4,287\nPenalty if Unpaid: $8,500",
-        scamIndices: [1, 2, 3, 4, 5, 6]
+        text: "FINAL LEGAL NOTICE\nInternal Revenue Service:\n\nIRS records indicate that you owe $4,287 in unpaid federal back taxes for fiscal year 2023.\n\nThis debt is now 90 days past due and has been escalated to our Priority Resolution Department.\n\nYou have exactly 24 hours from receipt of this message to contact us or a federal arrest warrant will be issued in your name for tax evasion.\n\nPayment can only be accepted via Apple gift cards ($500 denominations) or Google Play gift cards due to our emergency system maintenance.\n\nCall our Priority Resolution Department immediately at:\n1-866-441-2155\n\nOur secure online payment portal is temporarily offline for critical security updates and will not be available for 72 hours.\n\nWe cannot accept checks, credit cards, or bank transfers at this time due to federal privacy regulations.\n\nThis is your final warning before legal action is taken and your assets are frozen.\n\nCase Number: IRS-FR-2024-8847\nAmount Due: $4,287\nPenalty if Unpaid: $8,500",
+        scamIndices: [2, 3, 4, 5, 6, 7, 8, 9]
     },
     {
         sender: "Unknown",
         number: "+63 917 555 0147",
         time: "Sunday 6:47 PM",
-        text: "Hey Mom, it's me!\n\nI know this is a weird number - my iPhone completely broke and I had to borrow my friend Sarah's phone (she's from the Philippines, that's why it's an international number).\n\nMom, I'm in serious trouble. I got arrested for DUI about 2 hours ago and I'm currently at the downtown police station. I need $2,500 for bail IMMEDIATELY or I'll be stuck in jail all weekend until Monday morning!\n\nPlease, PLEASE don't tell Dad about this. I'm so embarrassed and ashamed. He'll be so disappointed in me.\n\nThe bail bondsman here says his credit card machine is broken right now (something about their system being down), so he can only accept Zelle or Venmo payments at the moment. Can you send the $2,500 to his Venmo: @Emergency_Bail_247?\n\nMy phone battery is at 3% and dying fast. This is literally my only phone call they're allowing me. I won't be able to text you back if it dies.\n\nPLEASE HURRY MOM! The bondsman says he's leaving in 30 minutes and then I'm stuck here until Monday!\n\nI love you so much. I'm so sorry. ❤️",
-        scamIndices: [2, 3, 4, 5, 6, 7]
+        text: "Hey Mom, it's me!\n\nI know this is a weird number - my iPhone completely broke and I had to borrow my friend Sarah's phone (she's from the Philippines, that's why it's an international number).\n\nMom, I'm in serious trouble.\n\nI got arrested for DUI about 2 hours ago and I'm currently at the downtown police station.\n\nI need $2,500 for bail IMMEDIATELY or I'll be stuck in jail all weekend until Monday morning!\n\nPlease, PLEASE don't tell Dad about this.\n\nI'm so embarrassed and ashamed. He'll be so disappointed in me.\n\nThe bail bondsman here says his credit card machine is broken right now (something about their system being down), so he can only accept Zelle or Venmo payments at the moment.\n\nCan you send the $2,500 to his Venmo:\n@Emergency_Bail_247\n\nMy phone battery is at 3% and dying fast.\n\nThis is literally my only phone call they're allowing me. I won't be able to text you back if it dies.\n\nPLEASE HURRY MOM!\n\nThe bondsman says he's leaving in 30 minutes and then I'm stuck here until Monday!\n\nI love you so much. I'm so sorry. ❤️",
+        scamIndices: [2, 3, 4, 5, 6, 7, 8, 9, 10]
     },
     {
         sender: "Toll Services FL",
         number: "+86 138 0000 5465",
         time: "Monday 10:12 AM",
-        text: "Florida Turnpike E-PASS Toll Violation Notice:\n\nVehicle License Plate: ****4J7B\nViolation Date: November 3rd, 2024\nLocation: I-95 Northbound, Mile Marker 127\n\nYour vehicle was captured by our automated toll cameras and you have an unpaid toll balance of $7 that is now overdue. You must pay within 5 days (by November 17th) to avoid a mandatory $50 late penalty fee being added to your account.\n\nVisit our secure payment portal: florida-toll-payment.net/invoice\n\nDue to extremely high call volume during peak hours, our customer service phone lines are completely down and unavailable. You must pay online immediately through the portal above.\n\nPlease enter your complete license plate number and credit card information to settle this violation. If payment is not received by the deadline, your vehicle registration will be suspended by the Florida DMV.\n\nInvoice Number: FTP-8847291\nToll Amount: $7\nLate Fee (if unpaid): $50\nTotal if Paid Today: $7",
-        scamIndices: [3, 4, 5, 6, 7]
+        text: "Florida Turnpike E-PASS\nToll Violation Notice:\n\nVehicle License Plate: ****4J7B\nViolation Date: November 3rd, 2024\nLocation: I-95 Northbound, Mile Marker 127\n\nYour vehicle was captured by our automated toll cameras and you have an unpaid toll balance of $7 that is now overdue.\n\nYou must pay within 5 days (by November 17th) to avoid a mandatory $50 late penalty fee being added to your account.\n\nVisit our secure payment portal:\nflorida-toll-payment.net/invoice\n\nDue to extremely high call volume during peak hours, our customer service phone lines are completely down and unavailable.\n\nYou must pay online immediately through the portal above.\n\nPlease enter your complete license plate number and credit card information to settle this violation.\n\nIf payment is not received by the deadline, your vehicle registration will be suspended by the Florida DMV.\n\nInvoice Number: FTP-8847291\nToll Amount: $7\nLate Fee (if unpaid): $50\nTotal if Paid Today: $7",
+        scamIndices: [4, 5, 6, 7, 8, 9, 10]
     },
     {
         sender: "PayPal Security",
         number: "+52 55 5555 1161",
         time: "Wednesday 4:55 PM",
-        text: "CRITICAL PayPal Security Alert: We detected someone attempting to transfer $847 from your account to an unknown recipient in Vietnam. This suspicious transaction has been blocked for your protection. Your account is now under temporary limitation. You must verify your identity within 12 hours or your account will be permanently suspended and all funds will be frozen. Click here to verify: paypal-account-secure.com/verify Our verification center is closed for emergency maintenance so you MUST use this secure link. Enter your email, password, and last 4 digits of your Social Security Number. Case Reference: PP-VN-8847",
-        scamIndices: [1, 2, 3, 4, 5, 6]
+        text: "CRITICAL PayPal Security Alert:\n\nWe detected someone attempting to transfer $847 from your account to an unknown recipient in Vietnam.\n\nThis suspicious transaction has been blocked for your protection.\n\nYour account is now under temporary limitation.\n\nYou must verify your identity within 12 hours or your account will be permanently suspended and all funds will be frozen.\n\nClick here to verify:\npaypal-account-secure.com/verify\n\nOur verification center is closed for emergency maintenance so you MUST use this secure link.\n\nEnter your email, password, and last 4 digits of your Social Security Number.\n\nCase Reference: PP-VN-8847",
+        scamIndices: [1, 2, 3, 4, 5, 6, 7, 8]
     },
     {
         sender: "Apple Security",
@@ -53,57 +53,57 @@ const messages = [
         sender: "Social Security Admin",
         number: "+60 12 345 0229",
         time: "Friday 9:41 AM",
-        text: "SSA URGENT SUSPENSION NOTICE: Your Social Security Number has been suspended immediately due to suspicious activity linked to fraud in Texas. Your SSN was used to open 3 fraudulent bank accounts. You must call our investigation unit at 1-866-593-0229 within 24 hours or a federal arrest warrant will be issued in your name. We cannot send email or mail for security reasons. Our office can only handle this matter by phone due to federal privacy laws. Press 1 to speak with an investigator now. Ignoring this notice will result in criminal charges. Case File: SSA-TX-FR-8847",
-        scamIndices: [0, 1, 2, 3, 4, 5, 6]
+        text: "SSA URGENT SUSPENSION NOTICE:\n\nYour Social Security Number has been suspended immediately due to suspicious activity linked to fraud in Texas.\n\nYour SSN was used to open 3 fraudulent bank accounts.\n\nYou must call our investigation unit at 1-866-593-0229 within 24 hours or a federal arrest warrant will be issued in your name.\n\nWe cannot send email or mail for security reasons.\n\nOur office can only handle this matter by phone due to federal privacy laws.\n\nPress 1 to speak with an investigator now.\n\nIgnoring this notice will result in criminal charges.\n\nCase File: SSA-TX-FR-8847",
+        scamIndices: [1, 2, 3, 4, 5, 6, 7, 8]
     },
     {
         sender: "Package Customs",
         number: "+7 495 555 8477",
         time: "Sunday 3:08 PM",
-        text: "US Customs Notice: Your international package from China is being held at the customs facility. An import tax of $13 must be paid within 72 hours or the package will be returned to sender and you will be charged a $45 restocking fee. Visit immediately: us-customs-clearance.net/pay Our customs offices are closed on weekends so online payment is your only option right now. Package contents: Electronics (Apple AirPods). Enter your tracking number and credit card to release your package. This is your final notice before automatic return and penalty fees. Tracking: CN8847291US",
-        scamIndices: [0, 1, 2, 3, 4, 5, 6]
+        text: "US Customs Notice:\n\nYour international package from China is being held at the customs facility.\n\nAn import tax of $13 must be paid within 72 hours or the package will be returned to sender and you will be charged a $45 restocking fee.\n\nVisit immediately:\nus-customs-clearance.net/pay\n\nOur customs offices are closed on weekends so online payment is your only option right now.\n\nPackage contents: Electronics (Apple AirPods).\n\nEnter your tracking number and credit card to release your package.\n\nThis is your final notice before automatic return and penalty fees.\n\nTracking: CN8847291US",
+        scamIndices: [1, 2, 3, 4, 5, 6, 7, 8, 9]
     },
     {
         sender: "Unknown Sender",
         number: "+92 300 5550192",
         time: "Wednesday 11:04 AM",
-        text: "Dad it's me! EMERGENCY! My car just broke down on Interstate 95 near exit 47. The tow truck driver is here right now (Mike's Towing) but he says his credit card reader is broken and he only accepts Cash App or Venmo. I need $180 RIGHT NOW for the tow or he's going to leave me stranded on the highway! Can you please send it to his Venmo @Towing_Services_Mike immediately? My phone is at 5% battery so I might not be able to respond. I promise I'll pay you back tonight when I get home! This is so stressful and scary! Please hurry Dad!",
-        scamIndices: [0, 1, 2, 3, 4, 5, 6]
+        text: "Dad it's me!\n\nEMERGENCY!\n\nMy car just broke down on Interstate 95 near exit 47.\n\nThe tow truck driver is here right now (Mike's Towing) but he says his credit card reader is broken and he only accepts Cash App or Venmo.\n\nI need $180 RIGHT NOW for the tow or he's going to leave me stranded on the highway!\n\nCan you please send it to his Venmo:\n@Towing_Services_Mike\n\nMy phone is at 5% battery so I might not be able to respond.\n\nI promise I'll pay you back tonight when I get home!\n\nThis is so stressful and scary!\n\nPlease hurry Dad!",
+        scamIndices: [2, 3, 4, 5, 6, 7, 8]
     },
     {
         sender: "Prize Winner Team",
         number: "+880 1711 555278",
         time: "Friday 4:41 PM",
-        text: "🎉 CONGRATULATIONS WINNER! You've been randomly selected to receive a $750 Amazon gift card in our customer loyalty program! To claim your prize immediately, verify your identity at amazon-prize-center.com within 24 hours only. Complete our quick 3-minute survey about your shopping experience. This is extremely time-sensitive as prizes expire within 24 hours! Our phone lines are currently down due to overwhelming response so please use the secure website link only. Enter your full name, email, phone number, and shipping address to claim. Winner Confirmation Code: AMZ-WINNER-8847 ✨",
-        scamIndices: [0, 1, 2, 3, 4, 5, 6]
+        text: "🎉 CONGRATULATIONS WINNER!\n\nYou've been randomly selected to receive a $750 Amazon gift card in our customer loyalty program!\n\nTo claim your prize immediately, verify your identity at amazon-prize-center.com within 24 hours only.\n\nComplete our quick 3-minute survey about your shopping experience.\n\nThis is extremely time-sensitive as prizes expire within 24 hours!\n\nOur phone lines are currently down due to overwhelming response so please use the secure website link only.\n\nEnter your full name, email, phone number, and shipping address to claim.\n\nWinner Confirmation Code:\nAMZ-WINNER-8847 ✨",
+        scamIndices: [1, 2, 3, 4, 5, 6, 7, 8]
     },
     {
         sender: "Bank Security Dept",
         number: "+234 803 777 9935",
         time: "Saturday 9:33 AM",
-        text: "URGENT Chase Bank Security Alert: We have detected unusual activity on your account. A charge of $2,847 at an electronics store in Los Angeles, CA was just processed. If you did not authorize this transaction, you must call our fraud department at 1-800-935-9935 within 2 hours. Your debit card has been temporarily frozen for your protection. To unlock your card immediately, visit: chase-security-unlock.com and enter your card number, CVV, and PIN. Our phone system is experiencing technical difficulties so the website is the fastest way to restore access. Waiting longer than 2 hours will result in permanent card cancellation. Reference Code: CH-SEC-8847",
-        scamIndices: [1, 2, 3, 4, 5, 6]
+        text: "URGENT Chase Bank Security Alert:\n\nWe have detected unusual activity on your account.\n\nA charge of $2,847 at an electronics store in Los Angeles, CA was just processed.\n\nIf you did not authorize this transaction, you must call our fraud department at 1-800-935-9935 within 2 hours.\n\nYour debit card has been temporarily frozen for your protection.\n\nTo unlock your card immediately, visit:\nchase-security-unlock.com\n\nEnter your card number, CVV, and PIN.\n\nOur phone system is experiencing technical difficulties so the website is the fastest way to restore access.\n\nWaiting longer than 2 hours will result in permanent card cancellation.\n\nReference Code: CH-SEC-8847",
+        scamIndices: [1, 2, 3, 4, 5, 6, 7, 8, 9]
     },
     {
         sender: "Microsoft Security",
         number: "+91 22 5555 7676",
         time: "Thursday 2:19 PM",
-        text: "Microsoft Account Security Warning: Your Microsoft 365 account was accessed from an unrecognized device in Beijing, China at 11:47 PM last night. This login appeared suspicious to our security systems. If this was not you, your account may have been compromised and we must take immediate action. Click here to secure your account now: microsoft-security-verify.com/account You have 6 hours to verify your identity before we permanently disable your account. Our security call center is closed for maintenance so you must use the online verification system. Enter your email, current password, and phone number to confirm your identity. Session ID: MSFT-CN-2024-8847",
-        scamIndices: [0, 1, 2, 3, 4, 5, 6]
+        text: "Microsoft Account Security Warning:\n\nYour Microsoft 365 account was accessed from an unrecognized device in Beijing, China at 11:47 PM last night.\n\nThis login appeared suspicious to our security systems.\n\nIf this was not you, your account may have been compromised and we must take immediate action.\n\nClick here to secure your account now:\nmicrosoft-security-verify.com/account\n\nYou have 6 hours to verify your identity before we permanently disable your account.\n\nOur security call center is closed for maintenance so you must use the online verification system.\n\nEnter your email, current password, and phone number to confirm your identity.\n\nSession ID: MSFT-CN-2024-8847",
+        scamIndices: [1, 2, 3, 4, 5, 6, 7, 8, 9]
     },
     {
         sender: "Netflix Account Team",
         number: "+63 917 505 2993",
         time: "Tuesday 7:23 PM",
-        text: "Netflix Payment Failed: We were unable to process your subscription payment of $19 for this month. Your account will be suspended in 24 hours unless you update your payment information immediately. To avoid service interruption, please visit: netflix-billing-update.com/payment and re-enter your credit card details. Our automated phone system is currently offline for upgrades so you must use the secure payment portal. Failure to update within 24 hours will result in permanent account deletion and loss of your viewing history and preferences. Account ID: NFLX-8847-2024",
-        scamIndices: [0, 1, 2, 3, 4, 5]
+        text: "Netflix Payment Failed:\n\nWe were unable to process your subscription payment of $19 for this month.\n\nYour account will be suspended in 24 hours unless you update your payment information immediately.\n\nTo avoid service interruption, please visit:\nnetflix-billing-update.com/payment\n\nRe-enter your credit card details.\n\nOur automated phone system is currently offline for upgrades so you must use the secure payment portal.\n\nFailure to update within 24 hours will result in permanent account deletion and loss of your viewing history and preferences.\n\nAccount ID: NFLX-8847-2024",
+        scamIndices: [1, 2, 3, 4, 5, 6, 7, 8]
     },
     {
         sender: "Amazon Prime Alert",
         number: "+86 138 280 4331",
         time: "Monday 8:52 AM",
-        text: "Amazon Prime Membership Suspended: We attempted to charge your card for your annual Prime membership renewal of $139 but the payment was declined. Your Prime benefits have been temporarily suspended. To restore your membership and continue enjoying free shipping and Prime Video, you must update your payment method within 48 hours. Visit: amazon-prime-renew.com/billing Our customer service lines are experiencing high wait times of over 2 hours, so please use the express online payment portal for immediate restoration. Enter your account email, password, and new credit card information. Membership ID: PRIME-8847-2024",
-        scamIndices: [0, 1, 2, 3, 4, 5]
+        text: "Amazon Prime Membership Suspended:\n\nWe attempted to charge your card for your annual Prime membership renewal of $139 but the payment was declined.\n\nYour Prime benefits have been temporarily suspended.\n\nTo restore your membership and continue enjoying free shipping and Prime Video, you must update your payment method within 48 hours.\n\nVisit:\namazon-prime-renew.com/billing\n\nOur customer service lines are experiencing high wait times of over 2 hours, so please use the express online payment portal for immediate restoration.\n\nEnter your account email, password, and new credit card information.\n\nMembership ID: PRIME-8847-2024",
+        scamIndices: [1, 2, 3, 4, 5, 6, 7, 8]
     }
 ];
 
