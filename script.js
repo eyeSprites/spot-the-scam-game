@@ -103,7 +103,7 @@ const messages = [
         number: "+86 138 280 4331",
         time: "Monday 8:52 AM",
         text: "Amazon Prime Membership Suspended:\n\nWe attempted to charge your card for your annual Prime membership renewal of $139 but the payment was declined.\n\nYour Prime benefits have been temporarily suspended.\n\nTo restore your membership and continue enjoying free shipping and Prime Video, you must update your payment method within 48 hours.\n\nVisit:\namazon-prime-renew.com/billing\n\nOur customer service lines are experiencing high wait times of over 2 hours, so please use the express online payment portal for immediate restoration.\n\nEnter your account email, password, and new credit card information.\n\nMembership ID: PRIME-8847-2024",
-        scamIndices: [3, 4, 5, 6, 7]
+        scamIndices: [0, 3, 4, 5, 6, 7]
     }
 ];
 
