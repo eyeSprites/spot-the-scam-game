@@ -143,7 +143,6 @@ const strikeCountSpan = document.getElementById('strikeCount');
 const contactName = document.getElementById('contactName');
 const contactNumber = document.getElementById('contactNumber');
 const messageTime = document.getElementById('messageTime');
-const rulesTab = document.getElementById('rulesTab');
 
 // Event Listeners
 startBtn.addEventListener('click', startGame);
@@ -158,7 +157,6 @@ contactNumber.addEventListener('click', () => handleContactClick('number'));
 function startGame() {
     startScreen.classList.remove('active');
     gameScreen.classList.add('active');
-    rulesTab.style.display = 'block';
     currentMessageIndex = 0;
     correctCount = 0;
     incorrectCount = 0;
@@ -324,7 +322,6 @@ function nextMessage() {
 function showEndScreen() {
     gameScreen.classList.remove('active');
     endScreen.classList.add('active');
-    rulesTab.style.display = 'none';
     
     // Calculate total scam sentences in selected messages
     const totalScamSentences = selectedMessages.reduce((sum, msg) => sum + msg.scamIndices.length, 0);
@@ -341,7 +338,6 @@ function showEndScreen() {
 function gameOver() {
     gameScreen.classList.remove('active');
     endScreen.classList.add('active');
-    rulesTab.style.display = 'none';
     
     // Show game over message
     document.querySelector('#endScreen h1').textContent = '💔 Game Over!';
@@ -352,7 +348,6 @@ function gameOver() {
 function restartGame() {
     endScreen.classList.remove('active');
     startScreen.classList.add('active');
-    rulesTab.style.display = 'none';
     currentMessageIndex = 0;
     correctCount = 0;
     incorrectCount = 0;
