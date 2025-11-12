@@ -54,7 +54,7 @@ const messages = [
         number: "+60 12 345 0229",
         time: "Friday 9:41 AM",
         text: "SSA URGENT SUSPENSION NOTICE:\n\nYour Social Security Number has been suspended immediately due to suspicious activity linked to fraud in Texas.\n\nYour SSN was used to open 3 fraudulent bank accounts.\n\nYou must call our investigation unit at 1-866-593-0229 within 24 hours or a federal arrest warrant will be issued in your name.\n\nWe cannot send email or mail for security reasons.\n\nOur office can only handle this matter by phone due to federal privacy laws.\n\nPress 1 to speak with an investigator now.\n\nIgnoring this notice will result in criminal charges.\n\nCase File: SSA-TX-FR-8847",
-        scamIndices: [0, 1, 3, 4, 5, 6, 7]
+        scamIndices: [0, 1, 2, 3, 4, 5, 7]
     },
     {
         sender: "Package Customs",
