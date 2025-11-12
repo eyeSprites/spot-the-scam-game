@@ -186,7 +186,11 @@ function loadMessage() {
     currentMessageScams = message.scamIndices.length;
     currentMessageScamsFound = 0;
     
-    // Set contact info
+    // Reset and set contact info
+    contactName.style.backgroundColor = '';
+    contactName.style.color = '';
+    contactNumber.style.backgroundColor = '';
+    contactNumber.style.color = '';
     contactName.textContent = message.sender;
     contactNumber.textContent = message.number;
     messageTime.textContent = message.time;
@@ -315,44 +319,44 @@ function nextMessage() {
     // Check if user found all scams in previous message
     showNotification();
     
-    // Reset contact info colors
-    contactName.style.backgroundColor = '';
-    contactName.style.color = '';
-    contactNumber.style.backgroundColor = '';
-    contactNumber.style.color = '';
-    
     currentMessageIndex++;
     
-    if (currentMessageIndex < selectedMessages.length) {
-        loadMessage();
-    } else {
-        showEndScreen();
-    }
+    // Small delay before loading next message to show notification
+    setTimeout(() => {
+        if (currentMessageIndex < selectedMessages.length) {
+            loadMessage();
+        } else {
+            showEndScreen();
+        }
+    }, 600);
 }
 
 function showNotification() {
     // Hide notification first (in case it's still showing)
     notification.classList.remove('show', 'success', 'error');
     
-    // Check if all scams were found
-    if (currentMessageScamsFound === currentMessageScams) {
-        // Success - got all scams!
-        notification.textContent = '✅ Perfect! You got all scams in the previous message!';
-        notification.classList.add('success');
-    } else {
-        // Missed some scams
-        const missed = currentMessageScams - currentMessageScamsFound;
-        notification.textContent = `❌ You missed ${missed} scam${missed > 1 ? 's' : ''} in the previous message!`;
-        notification.classList.add('error');
-    }
-    
-    // Show notification
-    notification.classList.add('show');
-    
-    // Hide after 5 seconds
+    // Small delay to ensure clean state
     setTimeout(() => {
-        notification.classList.remove('show');
-    }, 5000);
+        // Check if all scams were found
+        if (currentMessageScamsFound === currentMessageScams) {
+            // Success - got all scams!
+            notification.textContent = '✅ Perfect! You got all scams in the previous message!';
+            notification.classList.add('success');
+        } else {
+            // Missed some scams
+            const missed = currentMessageScams - currentMessageScamsFound;
+            notification.textContent = `❌ You missed ${missed} scam${missed > 1 ? 's' : ''} in the previous message!`;
+            notification.classList.add('error');
+        }
+        
+        // Show notification
+        notification.classList.add('show');
+        
+        // Hide after 5 seconds
+        setTimeout(() => {
+            notification.classList.remove('show');
+        }, 5000);
+    }, 100);
 }
 
 function showEndScreen() {
