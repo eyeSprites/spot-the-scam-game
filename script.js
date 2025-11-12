@@ -5,14 +5,14 @@ const messages = [
         number: "+44 7911 123456",
         time: "Tuesday 1:01 PM",
         text: "US Postal Service Alert:\n\nYou have a USPS parcel (#US847291938472) currently being cleared at our distribution center.\n\nDue to the detection of an invalid or incomplete zip code address, the parcel cannot be cleared and has been temporarily detained.\n\nPlease confirm your zip code address information through the secure link within 24 hours or the package will be automatically returned to sender.\n\nVisit:\nhttps://usps-clearance-portal,com/verify\n\nOur main verification system is temporarily down for maintenance, so you must use this secure link to update your information immediately.\n\nFailure to respond within 24 hours will result in permanent package destruction and a $45 processing fee.\n\nConfirmation Code: USPS-2024-9472",
-        scamIndices: [2, 3, 4, 5, 6, 7]
+        scamIndices: [2, 3, 5, 6, 7]
     },
     {
         sender: "FedEx Delivery",
         number: "+91 98765 43210",
         time: "Monday 9:22 AM",
         text: "FedEx Express URGENT Delivery Alert:\n\nYour package delivery (Tracking #FDX8847291847) has been suspended due to incomplete address information in our system.\n\nOur driver attempted delivery 3 times on November 10th, 11th, and 12th but was unable to access your building or reach you by phone.\n\nYou must pay a mandatory $5 redelivery processing fee within the next 48 hours to reschedule delivery.\n\nIf payment is not received immediately, the package will be returned to sender and you will forfeit the contents.\n\nVisit our secure payment portal:\nfedex-reschedule-delivery.net/pay\n\nOur standard credit card processing system is currently under emergency maintenance, so all payments must be made through the secure online portal only.\n\nPhone support is unavailable at this time.\n\nPackage Contents: Electronics\nOriginal Delivery Fee: $13\nRedelivery Fee: $5",
-        scamIndices: [0, 2, 3, 4, 5, 6, 7, 8]
+        scamIndices: [0, 3, 4, 6, 7, 8]
     },
     {
         sender: "IRS Tax Services",
@@ -33,7 +33,7 @@ const messages = [
         number: "+86 138 0000 5465",
         time: "Monday 10:12 AM",
         text: "Florida Turnpike E-PASS\nToll Violation Notice:\n\nVehicle License Plate: ****4J7B\nViolation Date: November 3rd, 2024\nLocation: I-95 Northbound, Mile Marker 127\n\nYour vehicle was captured by our automated toll cameras and you have an unpaid toll balance of $7 that is now overdue.\n\nYou must pay within 5 days (by November 17th) to avoid a mandatory $50 late penalty fee being added to your account.\n\nVisit our secure payment portal:\nflorida-toll-payment.net/invoice\n\nDue to extremely high call volume during peak hours, our customer service phone lines are completely down and unavailable.\n\nYou must pay online immediately through the portal above.\n\nPlease enter your complete license plate number and credit card information to settle this violation.\n\nIf payment is not received by the deadline, your vehicle registration will be suspended by the Florida DMV.\n\nInvoice Number: FTP-8847291\nToll Amount: $7\nLate Fee (if unpaid): $50\nTotal if Paid Today: $7",
-        scamIndices: [6, 7, 8, 9, 10, 11]
+        scamIndices: [7, 9, 10, 11, 12, 13]
     },
     {
         sender: "PayPal Security",
@@ -89,14 +89,14 @@ const messages = [
         number: "+91 22 5555 7676",
         time: "Thursday 2:19 PM",
         text: "Microsoft Account Security Warning:\n\nYour Microsoft 365 account was accessed from an unrecognized device in Beijing, China at 11:47 PM last night.\n\nThis login appeared suspicious to our security systems.\n\nIf this was not you, your account may have been compromised and we must take immediate action.\n\nClick here to secure your account now:\nmicrosoft-security-verify.com/account\n\nYou have 6 hours to verify your identity before we permanently disable your account.\n\nOur security call center is closed for maintenance so you must use the online verification system.\n\nEnter your email, current password, and phone number to confirm your identity.\n\nSession ID: MSFT-CN-2024-8847",
-        scamIndices: [3, 4, 5, 6, 7, 8]
+        scamIndices: [1, 3, 5, 6, 7, 8]
     },
     {
         sender: "Netflix Account Team",
         number: "+63 917 505 2993",
         time: "Tuesday 7:23 PM",
         text: "Netflix Payment Failed:\n\nWe were unable to process your subscription payment of $19 for this month.\n\nYour account will be suspended in 24 hours unless you update your payment information immediately.\n\nTo avoid service interruption, please visit:\nnetflix-billing-update.com/payment\n\nRe-enter your credit card details.\n\nOur automated phone system is currently offline for upgrades so you must use the secure payment portal.\n\nFailure to update within 24 hours will result in permanent account deletion and loss of your viewing history and preferences.\n\nAccount ID: NFLX-8847-2024",
-        scamIndices: [2, 3, 4, 6, 7]
+        scamIndices: [2, 4, 5, 6, 7]
     },
     {
         sender: "Amazon Prime Alert",
