@@ -26,7 +26,7 @@ const messages = [
         number: "+63 917 555 0147",
         time: "Sunday 6:47 PM",
         text: "Hey Mom, it's me!\n\nI know this is a weird number - my iPhone completely broke and I had to borrow my friend Sarah's phone (she's from the Philippines, that's why it's an international number).\n\nMom, I'm in serious trouble.\n\nI got arrested for DUI about 2 hours ago and I'm currently at the downtown police station.\n\nI need $2,500 for bail IMMEDIATELY or I'll be stuck in jail all weekend until Monday morning!\n\nPlease, PLEASE don't tell Dad about this.\n\nI'm so embarrassed and ashamed. He'll be so disappointed in me.\n\nThe bail bondsman here says his credit card machine is broken right now (something about their system being down), so he can only accept Zelle or Venmo payments at the moment.\n\nCan you send the $2,500 to his Venmo:\n@Emergency_Bail_247\n\nMy phone battery is at 3% and dying fast.\n\nThis is literally my only phone call they're allowing me. I won't be able to text you back if it dies.\n\nPLEASE HURRY MOM!\n\nThe bondsman says he's leaving in 30 minutes and then I'm stuck here until Monday!\n\nI love you so much. I'm so sorry. ❤️",
-        scamIndices: [2, 3, 4, 5, 6, 7, 8, 9, 10]
+        scamIndices: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
     },
     {
         sender: "Toll Services FL",
