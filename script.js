@@ -4,7 +4,7 @@ const messages = [
         sender: "USPS",
         number: "+44 7911 123456",
         time: "Tuesday 1:01 PM",
-        text: "U.S. Postal Service Alert:\n\nYou have a USPS parcel (#US847291938472) currently being cleared at our distribution center.\n\nDue to the detection of an invalid or incomplete zip code address, the parcel cannot be cleared and has been temporarily detained.\n\nPlease confirm your zip code address information through the secure link within 24 hours or the package will be automatically returned to sender.\n\nVisit:\nhttps://usps-clearance-portal.com/verify\n\nOur main verification system is temporarily down for maintenance, so you must use this secure link to update your information immediately.\n\nFailure to respond within 24 hours will result in permanent package destruction and a $45 processing fee.\n\nConfirmation Code: USPS-2024-9472",
+        text: "US Postal Service Alert:\n\nYou have a USPS parcel (#US847291938472) currently being cleared at our distribution center.\n\nDue to the detection of an invalid or incomplete zip code address, the parcel cannot be cleared and has been temporarily detained.\n\nPlease confirm your zip code address information through the secure link within 24 hours or the package will be automatically returned to sender.\n\nVisit:\nhttps://usps-clearance-portal,com/verify\n\nOur main verification system is temporarily down for maintenance, so you must use this secure link to update your information immediately.\n\nFailure to respond within 24 hours will result in permanent package destruction and a $45 processing fee.\n\nConfirmation Code: USPS-2024-9472",
         scamIndices: [2, 3, 4, 5, 6, 7]
     },
     {
