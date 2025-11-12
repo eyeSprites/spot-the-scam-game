@@ -115,6 +115,8 @@ let strikes = 0;
 let clickedSentences = new Set();
 let totalSentences = 0;
 let totalScamSentences = 0;
+let currentMessageScams = 0;
+let currentMessageScamsFound = 0;
 let selectedMessages = [];
 const MAX_STRIKES = 3;
 const MESSAGES_PER_GAME = 3;
@@ -143,6 +145,7 @@ const strikeCountSpan = document.getElementById('strikeCount');
 const contactName = document.getElementById('contactName');
 const contactNumber = document.getElementById('contactNumber');
 const messageTime = document.getElementById('messageTime');
+const notification = document.getElementById('notification');
 
 // Event Listeners
 startBtn.addEventListener('click', startGame);
@@ -178,6 +181,10 @@ function startGame() {
 function loadMessage() {
     const message = selectedMessages[currentMessageIndex];
     clickedSentences.clear();
+    
+    // Track scams for current message
+    currentMessageScams = message.scamIndices.length;
+    currentMessageScamsFound = 0;
     
     // Set contact info
     contactName.textContent = message.sender;
@@ -275,6 +282,7 @@ function handleSentenceClick(index, scamIndices) {
         // Correctly identified a scam sentence
         sentenceElement.classList.add('correct');
         correctCount++;
+        currentMessageScamsFound++;
     } else {
         // Incorrectly marked a safe sentence as scam - this is a mistake!
         sentenceElement.classList.add('incorrect');
@@ -304,6 +312,9 @@ function updateScore() {
 }
 
 function nextMessage() {
+    // Check if user found all scams in previous message
+    showNotification();
+    
     // Reset contact info colors
     contactName.style.backgroundColor = '';
     contactName.style.color = '';
@@ -317,6 +328,31 @@ function nextMessage() {
     } else {
         showEndScreen();
     }
+}
+
+function showNotification() {
+    // Hide notification first (in case it's still showing)
+    notification.classList.remove('show', 'success', 'error');
+    
+    // Check if all scams were found
+    if (currentMessageScamsFound === currentMessageScams) {
+        // Success - got all scams!
+        notification.textContent = '✅ Perfect! You got all scams in the previous message!';
+        notification.classList.add('success');
+    } else {
+        // Missed some scams
+        const missed = currentMessageScams - currentMessageScamsFound;
+        notification.textContent = `❌ You missed ${missed} scam${missed > 1 ? 's' : ''} in the previous message!`;
+        notification.classList.add('error');
+    }
+    
+    // Show notification
+    notification.classList.add('show');
+    
+    // Hide after 5 seconds
+    setTimeout(() => {
+        notification.classList.remove('show');
+    }, 5000);
 }
 
 function showEndScreen() {

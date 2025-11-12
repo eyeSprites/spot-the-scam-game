@@ -167,6 +167,54 @@ body {
     min-height: 500px;
 }
 
+/* Notification Banner */
+.notification {
+    display: none;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    animation: slideDown 0.3s ease-out;
+    position: relative;
+    z-index: 10;
+}
+
+.notification.show {
+    display: block;
+}
+
+.notification.success {
+    background: #32d74b;
+    color: #000;
+}
+
+.notification.error {
+    background: #ff453a;
+    color: #fff;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
 /* Message Header */
 .imessage-header {
     background: #1c1c1e;
