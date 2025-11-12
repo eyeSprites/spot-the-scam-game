@@ -46,7 +46,7 @@ const messages = [
         sender: "Apple Security",
         number: "+7 495 555 7753",
         time: "Thursday 11:28 AM",
-        text: "Apple ID Critical Security Alert:\n\nYour Apple ID was used to sign in to iCloud on a Windows computer in Moscow, Russia at 3:42 AM EST today.\n\nIf this was not you, your account may be compromised.\n\nYou must change your password immediately within 6 hours.\n\nVisit:\napple-id-security.com/reset\n\nOur phone support is unavailable due to high call volume so please use the secure link above.\n\nEnter your current Apple ID and password to verify your identity and create a new secure password.\n\nFailure to act will result in permanent account suspension.\n\nSecurity Code: APPL-RU-8847",
+        text: "Apple ID Critical Security Alert:\n\nYour Apple ID was used to sign in to iCloud on a Windows computer in Moscow, Russia at 3:42 AM EST today.\n\nIf this was not you, your account may be compromised.\n\nYou must change your password immediately within 6 hours.\n\nVisit:\napple-id-security,com/reset\n\nOur phone support is unavailable due to high call volume so please use the secure link above.\n\nEnter your current Apple ID and password to verify your identity and create a new secure password.\n\nFailure to act will result in permanent account suspension.\n\nSecurity Code: APPL-RU-8847",
         scamIndices: [0, 3, 4, 5, 6, 7, 8]
     },
     {
