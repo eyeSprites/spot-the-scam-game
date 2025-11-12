@@ -49,7 +49,7 @@ body {
 #startScreen {
     text-align: center;
     padding: 60px 30px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: #4b5563;
     min-height: 500px;
     justify-content: center;
     align-items: center;
@@ -350,7 +350,7 @@ body {
 #endScreen {
     text-align: center;
     padding: 60px 30px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: #4b5563;
     min-height: 500px;
     justify-content: center;
     align-items: center;
@@ -420,4 +420,63 @@ body {
 
 .message-container::-webkit-scrollbar-thumb:hover {
     background: #48484a;
+}
+
+/* Fixed Rules Tab at Bottom */
+.rules-tab {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 12px 15px;
+    border-top: 2px solid #667eea;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    display: none;
+}
+
+#gameScreen.active ~ .rules-tab {
+    display: block;
+}
+
+.rules-tab-content {
+    max-width: 500px;
+    margin: 0 auto;
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.rules-tab-content strong {
+    color: #ffd700;
+    margin-right: 8px;
+}
+
+.rule-item {
+    display: inline-block;
+    margin: 0 8px;
+    padding: 4px 8px;
+    background: rgba(102, 126, 234, 0.3);
+    border-radius: 6px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+@media (max-width: 450px) {
+    .rules-tab {
+        padding: 10px;
+    }
+    
+    .rules-tab-content {
+        font-size: 11px;
+    }
+    
+    .rule-item {
+        font-size: 10px;
+        margin: 2px 4px;
+        padding: 3px 6px;
+    }
 }
