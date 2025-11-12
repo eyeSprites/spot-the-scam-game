@@ -60,7 +60,7 @@ const messages = [
         sender: "Package Customs",
         number: "+7 495 555 8477",
         time: "Sunday 3:08 PM",
-        text: "US Customs Notice:\n\nYour international package from China is being held at the customs facility.\n\nAn import tax of $13 must be paid within 72 hours or the package will be returned to sender and you will be charged a $45 restocking fee.\n\nVisit immediately:\nus-customs-clearance.net/pay\n\nOur customs offices are closed on weekends so online payment is your only option right now.\n\nPackage contents: Electronics (Apple AirPods).\n\nEnter your tracking number and credit card to release your package.\n\nThis is your final notice before automatic return and penalty fees.\n\nTracking: CN8847291US",
+        text: "US Customs Notice:\n\nYour international package from China is being held at the customs facility.\n\nAn import tax of $13 must be paid within 72 hours or the package will be returned to sender and you will be charged a $45 restocking fee.\n\nVisit immediately:\nus-customs-clearance,net/pay\n\nOur customs offices are closed on weekends so online payment is your only option right now.\n\nPackage contents: Electronics (Apple AirPods).\n\nEnter your tracking number and credit card to release your package.\n\nThis is your final notice before automatic return and penalty fees.\n\nTracking: CN8847291US",
         scamIndices: [1, 2, 3, 4, 5, 6, 7, 8, 9]
     },
     {
@@ -68,7 +68,7 @@ const messages = [
         number: "+92 300 5550192",
         time: "Wednesday 11:04 AM",
         text: "Dad it's me!\n\nEMERGENCY!\n\nMy car just broke down on Interstate 95 near exit 47.\n\nThe tow truck driver is here right now (Mike's Towing) but he says his credit card reader is broken and he only accepts Cash App or Venmo.\n\nI need $180 RIGHT NOW for the tow or he's going to leave me stranded on the highway!\n\nCan you please send it to his Venmo:\n@Towing_Services_Mike\n\nMy phone is at 5% battery so I might not be able to respond.\n\nI promise I'll pay you back tonight when I get home!\n\nThis is so stressful and scary!\n\nPlease hurry Dad!",
-        scamIndices: [2, 3, 4, 5, 6, 7, 8]
+        scamIndices: [1, 2, 3, 4, 5, 6, 7, 8]
     },
     {
         sender: "Prize Winner Team",
