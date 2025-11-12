@@ -4,36 +4,36 @@ const messages = [
         sender: "USPS",
         number: "+44 7911 123456",
         time: "Tuesday 1:01 PM",
-        text: "U.S. Post: You have a USPS parcel being cleared, due to the detection of an invalid zip code address, the parcel can not be cleared. The parcel is temporarily detained. Please confirm the zip code address information in the link within 24 hours or it will be returned. Visit: https://usps-clearance-portal.com/verify Our main system is temporarily down so you must use this secure link to update your information. Failure to respond will result in package destruction. Confirmation Code: USPS-2024-9472",
-        scamIndices: [0, 1, 2, 3, 4, 5]
+        text: "U.S. Postal Service Alert:\n\nYou have a USPS parcel (#US847291938472) currently being cleared at our distribution center. Due to the detection of an invalid or incomplete zip code address, the parcel cannot be cleared and has been temporarily detained.\n\nPlease confirm your zip code address information through the secure link within 24 hours or the package will be automatically returned to sender.\n\nVisit: https://usps-clearance-portal.com/verify\n\nOur main verification system is temporarily down for maintenance, so you must use this secure link to update your information immediately. Failure to respond within 24 hours will result in permanent package destruction and a $45.00 processing fee.\n\nConfirmation Code: USPS-2024-9472",
+        scamIndices: [1, 2, 3, 4, 5]
     },
     {
         sender: "FedEx Delivery",
         number: "+91 98765 43210",
         time: "Monday 9:22 AM",
-        text: "FedEx URGENT Alert: Your package delivery has been suspended due to incomplete address information. We attempted delivery 3 times but could not reach you. You must pay a $4.99 redelivery processing fee within 48 hours. The package will be returned to sender if payment is not received immediately. Visit: fedex-reschedule-delivery.net/pay Our credit card processing system is under maintenance so payment must be made through the secure portal only. Tracking number: FDX8847291-US",
-        scamIndices: [0, 1, 2, 3, 4, 5]
+        text: "FedEx Express URGENT Delivery Alert:\n\nYour package delivery (Tracking #FDX8847291847) has been suspended due to incomplete address information in our system. Our driver attempted delivery 3 times on November 10th, 11th, and 12th but was unable to access your building or reach you by phone.\n\nYou must pay a mandatory $4.99 redelivery processing fee within the next 48 hours to reschedule delivery. If payment is not received immediately, the package will be returned to sender and you will forfeit the contents.\n\nVisit our secure payment portal: fedex-reschedule-delivery.net/pay\n\nOur standard credit card processing system is currently under emergency maintenance, so all payments must be made through the secure online portal only. Phone support is unavailable at this time.\n\nPackage Contents: Electronics\nOriginal Delivery Fee: $12.50\nRedelivery Fee: $4.99",
+        scamIndices: [1, 2, 3, 4, 5]
     },
     {
         sender: "IRS Tax Services",
         number: "+234 802 555 0199",
         time: "Friday 8:15 AM",
-        text: "FINAL LEGAL NOTICE: IRS records indicate you owe $4,287 in unpaid back taxes for fiscal year 2023. You have 24 hours to contact our Priority Resolution Department or a federal arrest warrant will be issued. Payment can only be accepted via Apple gift cards or Google Play cards due to emergency system maintenance. Call 1-866-441-2155 immediately. Our online payment portal is temporarily offline for security updates. This is your last warning before legal action is taken. Case Number: IRS-FR-2024-8847",
-        scamIndices: [0, 1, 2, 3, 4, 5, 6]
+        text: "FINAL LEGAL NOTICE - Internal Revenue Service:\n\nIRS records indicate that you owe $4,287.50 in unpaid federal back taxes for fiscal year 2023. This debt is now 90 days past due and has been escalated to our Priority Resolution Department.\n\nYou have exactly 24 hours from receipt of this message to contact us or a federal arrest warrant will be issued in your name for tax evasion. Payment can only be accepted via Apple gift cards ($500.00 denominations) or Google Play gift cards due to our emergency system maintenance.\n\nCall our Priority Resolution Department immediately at: 1-866-441-2155\n\nOur secure online payment portal is temporarily offline for critical security updates and will not be available for 72 hours. We cannot accept checks, credit cards, or bank transfers at this time due to federal privacy regulations.\n\nThis is your final warning before legal action is taken and your assets are frozen.\n\nCase Number: IRS-FR-2024-8847\nAmount Due: $4,287.50\nPenalty if Unpaid: $8,500.00",
+        scamIndices: [1, 2, 3, 4, 5, 6]
     },
     {
         sender: "Unknown",
         number: "+63 917 555 0147",
         time: "Sunday 6:47 PM",
-        text: "Hey Mom it's me! My phone broke and I'm using a friend's number in the Philippines. I got arrested for DUI and I'm at the police station right now. I need $2,500 for bail IMMEDIATELY or I'll be stuck in jail all weekend! Please don't tell Dad, I'm so embarrassed about this. The bail bondsman's credit card machine is broken so he only accepts Zelle or Venmo right now. Can you send it to @Emergency_Bail_247? My phone battery is dying and this is my only call. PLEASE HURRY MOM! Time is running out! Love you ❤️",
-        scamIndices: [0, 1, 2, 3, 4, 5, 6, 7]
+        text: "Hey Mom, it's me!\n\nI know this is a weird number - my iPhone completely broke and I had to borrow my friend Sarah's phone (she's from the Philippines, that's why it's an international number).\n\nMom, I'm in serious trouble. I got arrested for DUI about 2 hours ago and I'm currently at the downtown police station. I need $2,500.00 for bail IMMEDIATELY or I'll be stuck in jail all weekend until Monday morning!\n\nPlease, PLEASE don't tell Dad about this. I'm so embarrassed and ashamed. He'll be so disappointed in me.\n\nThe bail bondsman here says his credit card machine is broken right now (something about their system being down), so he can only accept Zelle or Venmo payments at the moment. Can you send the $2,500.00 to his Venmo: @Emergency_Bail_247?\n\nMy phone battery is at 3% and dying fast. This is literally my only phone call they're allowing me. I won't be able to text you back if it dies.\n\nPLEASE HURRY MOM! The bondsman says he's leaving in 30 minutes and then I'm stuck here until Monday!\n\nI love you so much. I'm so sorry. ❤️",
+        scamIndices: [2, 3, 4, 5, 6, 7]
     },
     {
         sender: "Toll Services FL",
         number: "+86 138 0000 5465",
         time: "Monday 10:12 AM",
-        text: "Florida E-PASS Toll Violation: Your vehicle (license plate ending in 4J7B) was captured by toll cameras on I-95. You have an unpaid toll balance of $6.50 from November 3rd. Pay within 5 days to avoid a $50 late penalty fee. Visit: florida-toll-payment.net/invoice Due to extremely high call volume, our phone lines are completely down. You must pay online immediately. Enter your license plate number and credit card information to settle this violation. If payment is not received, your vehicle registration will be suspended. Invoice #FTP-8847291",
-        scamIndices: [0, 2, 3, 4, 5, 6]
+        text: "Florida Turnpike E-PASS Toll Violation Notice:\n\nVehicle License Plate: ****4J7B\nViolation Date: November 3rd, 2024\nLocation: I-95 Northbound, Mile Marker 127\n\nYour vehicle was captured by our automated toll cameras and you have an unpaid toll balance of $6.50 that is now overdue. You must pay within 5 days (by November 17th) to avoid a mandatory $50.00 late penalty fee being added to your account.\n\nVisit our secure payment portal: florida-toll-payment.net/invoice\n\nDue to extremely high call volume during peak hours, our customer service phone lines are completely down and unavailable. You must pay online immediately through the portal above.\n\nPlease enter your complete license plate number and credit card information to settle this violation. If payment is not received by the deadline, your vehicle registration will be suspended by the Florida DMV.\n\nInvoice Number: FTP-8847291\nToll Amount: $6.50\nLate Fee (if unpaid): $50.00\nTotal if Paid Today: $6.50",
+        scamIndices: [3, 4, 5, 6, 7]
     },
     {
         sender: "PayPal Security",
@@ -195,8 +195,8 @@ function loadMessage() {
     contactNumber.textContent = message.number;
     messageTime.textContent = message.time;
     
-    // Split text into sentences
-    const sentences = message.text.match(/[^.!?]+[.!?]+/g) || [message.text];
+    // Split text into sentences (but not on decimal points in numbers)
+    const sentences = message.text.match(/[^.!?]+(?:\.\d+)?[.!?]+/g) || [message.text];
     totalSentences = sentences.length;
     
     // Update progress
