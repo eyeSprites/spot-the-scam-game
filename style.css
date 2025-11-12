@@ -49,7 +49,7 @@ body {
 #startScreen {
     text-align: center;
     padding: 60px 30px;
-    background: #4b5563;
+    background: #c7b8ea;
     min-height: 500px;
     justify-content: center;
     align-items: center;
@@ -63,7 +63,7 @@ body {
 }
 
 .instructions {
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(10px);
     border-radius: 15px;
     padding: 25px;
@@ -119,6 +119,18 @@ body {
     margin-bottom: 0;
     text-align: center;
     font-style: italic;
+}
+
+.action-text {
+    font-size: 1.15em;
+    color: #667eea;
+    font-weight: 700;
+    margin: 15px 0 0 0;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 2px solid #667eea;
 }
 
 /* Buttons */
@@ -350,7 +362,7 @@ body {
 #endScreen {
     text-align: center;
     padding: 60px 30px;
-    background: #4b5563;
+    background: #c7b8ea;
     min-height: 500px;
     justify-content: center;
     align-items: center;
@@ -364,7 +376,7 @@ body {
 }
 
 .final-score {
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(10px);
     border-radius: 20px;
     padding: 30px;
