@@ -11,9 +11,22 @@
         <!-- Start Screen -->
         <div id="startScreen" class="screen active">
             <h1>🎮 Spot the Scam!</h1>
-            <p>You'll see text messages that look real. Tap on the parts that seem like scams - things that create urgency, ask for money/info, or make excuses.</p>
-            <p style="font-size: 0.95em; margin-top: 15px;">⚠️ Be careful! 3 wrong taps and you lose!</p>
-            <p style="font-size: 0.85em; color: rgba(255,255,255,0.8); margin-top: 10px;">Click suspicious phone numbers or glowing links if they look fake!</p>
+            <div class="instructions">
+                <p class="instruction-main">You'll receive realistic text messages. Your job is to identify ALL the scam indicators.</p>
+                
+                <p class="instruction-detail"><strong>Look for these red flags:</strong></p>
+                <ul class="red-flags">
+                    <li>⚡ <strong>Urgency:</strong> "Act within 24 hours" or "IMMEDIATE action required"</li>
+                    <li>💰 <strong>Money Requests:</strong> Unusual payment methods (gift cards, Venmo to strangers)</li>
+                    <li>🔗 <strong>Suspicious Links:</strong> Fake URLs that look slightly off</li>
+                    <li>📞 <strong>Wrong Phone Numbers:</strong> International numbers for US companies</li>
+                    <li>🌍 <strong>Fake Locations:</strong> Login from Moscow when you're in the US</li>
+                    <li>🚫 <strong>Weird Excuses:</strong> "System is down" or "must use this link only"</li>
+                </ul>
+                
+                <p class="warning-text">⚠️ <strong>3 STRIKES AND YOU'RE OUT!</strong></p>
+                <p class="tip-text">Click on ANY suspicious sentence, phone number, or glowing link!</p>
+            </div>
             <button id="startBtn" class="btn-primary">Start Game</button>
         </div>
 

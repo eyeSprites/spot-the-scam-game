@@ -6,7 +6,7 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: #6b7280;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -58,16 +58,67 @@ body {
 #startScreen h1 {
     font-size: 2.5em;
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     text-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 
-#startScreen p {
-    font-size: 1.1em;
-    color: rgba(255, 255, 255, 0.95);
+.instructions {
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 25px;
+    text-align: left;
+    max-width: 500px;
+}
+
+.instruction-main {
+    font-size: 1.15em;
+    color: white;
     margin-bottom: 20px;
     line-height: 1.6;
-    max-width: 400px;
+    font-weight: 500;
+}
+
+.instruction-detail {
+    font-size: 1.1em;
+    color: white;
+    margin-bottom: 12px;
+    margin-top: 15px;
+}
+
+.red-flags {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.red-flags li {
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: 10px;
+    line-height: 1.5;
+    padding-left: 5px;
+}
+
+.red-flags strong {
+    color: #ffd700;
+}
+
+.warning-text {
+    font-size: 1.15em;
+    color: #ff453a;
+    font-weight: 700;
+    margin: 20px 0 10px 0;
+    text-align: center;
+}
+
+.tip-text {
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 0;
+    text-align: center;
+    font-style: italic;
 }
 
 /* Buttons */
